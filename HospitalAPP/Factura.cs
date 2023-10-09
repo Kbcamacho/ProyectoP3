@@ -7,7 +7,7 @@ using HospitalAPP;
 
 namespace HospitalAPP
 {
-    internal class Factura : Cita
+    public class Factura : Cita
     {
         public String IdFactura { get; set; }
         public String Servicio { get; set; }
