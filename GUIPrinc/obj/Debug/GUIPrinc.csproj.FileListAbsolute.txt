@@ -1,0 +1,11 @@
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\bin\Debug\GUIPrinc.exe.config
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\bin\Debug\GUIPrinc.exe
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\bin\Debug\GUIPrinc.pdb
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.Properties.Resources.resources
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.csproj.GenerateResource.cache
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.exe
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.pdb
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.Principal.resources
+C:\Users\User\Source\Repos\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.GestCitas.resources
