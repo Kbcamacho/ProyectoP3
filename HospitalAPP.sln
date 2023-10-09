@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "HospitalAPP\Entidades.csproj", "{AA656B41-36CC-4F80-A401-D8282DAA8CBB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIPrinc", "GUIPrinc\GUIPrinc.csproj", "{B7E70AF7-8CFD-4565-BAE7-FB77257F28BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AA656B41-36CC-4F80-A401-D8282DAA8CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA656B41-36CC-4F80-A401-D8282DAA8CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA656B41-36CC-4F80-A401-D8282DAA8CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7E70AF7-8CFD-4565-BAE7-FB77257F28BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7E70AF7-8CFD-4565-BAE7-FB77257F28BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7E70AF7-8CFD-4565-BAE7-FB77257F28BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7E70AF7-8CFD-4565-BAE7-FB77257F28BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
