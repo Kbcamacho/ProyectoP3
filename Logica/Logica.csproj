@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AA656B41-36CC-4F80-A401-D8282DAA8CBB}</ProjectGuid>
+    <ProjectGuid>{35CD59A0-04FA-4DEA-8CED-F9802FB523BB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>HospitalAPP</RootNamespace>
-    <AssemblyName>HospitalAPP</AssemblyName>
+    <RootNamespace>Logica</RootNamespace>
+    <AssemblyName>Logica</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,12 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Usuario\Cita.cs" />
-    <Compile Include="Admin\Doctor.cs" />
-    <Compile Include="Admin\Factura.cs" />
-    <Compile Include="Usuario\Paciente.cs" />
-    <Compile Include="Admin\Pago.cs" />
-    <Compile Include="Usuario\Persona.cs" />
+    <Compile Include="LCitas\L_Citas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
