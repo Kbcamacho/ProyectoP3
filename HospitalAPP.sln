@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUIPrinc", "GUIPrinc\GUIPri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logica", "Logica\Logica.csproj", "{35CD59A0-04FA-4DEA-8CED-F9802FB523BB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Datos", "Datos\Datos.csproj", "{F7A69A9B-F172-4BD5-B433-29CABF6271CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{35CD59A0-04FA-4DEA-8CED-F9802FB523BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35CD59A0-04FA-4DEA-8CED-F9802FB523BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35CD59A0-04FA-4DEA-8CED-F9802FB523BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7A69A9B-F172-4BD5-B433-29CABF6271CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7A69A9B-F172-4BD5-B433-29CABF6271CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7A69A9B-F172-4BD5-B433-29CABF6271CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7A69A9B-F172-4BD5-B433-29CABF6271CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
