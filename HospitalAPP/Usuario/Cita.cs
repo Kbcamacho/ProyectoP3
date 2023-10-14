@@ -10,26 +10,27 @@ namespace HospitalAPP
     public class Cita
     {
         public String IdCita { get; set; }
-        public String IdPaciente { get; set; }
-        public String IdDoctor { get; set; }
-        public String FechaCita { get; set; }
-        public String HoraCita { get; set; }
-        public String TipoCita { get; set; }
+        public Paciente Paciente { get; set; }
+        public String MotivoCita { get; set; }
+        public Doctor Doctor { get; set; }
+        public DateTime FechaCita { get; set; }
+        public String Especialidad { get; set; }
+        public double Precio { get; set; }
 
         public Cita()
         {
 
         }
 
-        public Cita(String idCita, String idPaciente, String idDoctor, String fechaCita, String horaCita,
-            String tipoCita)
+        public Cita(string idCita, Paciente paciente, string motivoCita, Doctor doctor, DateTime fechaCita, string especialidad, double precio)
         {
             IdCita = idCita;
-            IdPaciente = idPaciente;
-            IdDoctor = idDoctor;
+            Paciente = paciente;
+            MotivoCita = motivoCita;
+            Doctor = doctor;
             FechaCita = fechaCita;
-            HoraCita = horaCita;
-            TipoCita = tipoCita;
+            Especialidad = especialidad;
+            Precio = precio;
         }
     }
 }

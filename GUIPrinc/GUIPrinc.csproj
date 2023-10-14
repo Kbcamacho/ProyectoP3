@@ -59,12 +59,21 @@
       <DependentUpon>GestCitas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramCita.Designer.cs">
+      <DependentUpon>ProgramCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GestCitas.resx">
       <DependentUpon>GestCitas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramCita.resx">
+      <DependentUpon>ProgramCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -97,6 +106,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\circulo-de-usuario1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HospitalAPP\Entidades.csproj">
+      <Project>{aa656b41-36cc-4f80-a401-d8282daa8cbb}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Logica\Logica.csproj">
+      <Project>{35cd59a0-04fa-4dea-8ced-f9802fb523bb}</Project>
+      <Name>Logica</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

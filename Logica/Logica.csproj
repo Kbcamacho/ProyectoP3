@@ -44,6 +44,11 @@
     <Compile Include="LCitas\L_Citas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\HospitalAPP\Entidades.csproj">
+      <Project>{aa656b41-36cc-4f80-a401-d8282daa8cbb}</Project>
+      <Name>Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

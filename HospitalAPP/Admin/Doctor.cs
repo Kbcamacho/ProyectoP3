@@ -9,7 +9,8 @@ namespace HospitalAPP
 {
     public class Doctor : Persona
     {
-        public double Sueldo { get; set; }
+        public String Especialidad { get; set; }
+        public bool Disponibilidad { get; set; }
 
         public Doctor()
         {
@@ -19,7 +20,8 @@ namespace HospitalAPP
         public Doctor(String nombre, String cedula, String telefono, String direccion, String correoElectronico,
             String sexo, double sueldo) : base(nombre, cedula, telefono, direccion, correoElectronico, sexo)
         {
-            Sueldo = sueldo;
+            Especialidad = nombre; 
+            Disponibilidad = disponibilidad;
         }
     }
 }

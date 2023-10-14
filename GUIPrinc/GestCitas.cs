@@ -43,5 +43,12 @@ namespace GUIPrinc
         {
 
         }
+
+        private void btnSacarCita_Click(object sender, EventArgs e)
+        {
+            Form btProgCita = new ProgramCita();
+            btProgCita.Show();
+            this.Hide();
+        }
     }
 }
