@@ -4,3 +4,9 @@ C:\Users\User\Source\Repos\ProyectoP3\HospitalAPP\obj\Debug\Entidades.csproj.Ass
 C:\Users\User\Source\Repos\ProyectoP3\HospitalAPP\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\User\Source\Repos\ProyectoP3\HospitalAPP\obj\Debug\HospitalAPP.dll
 C:\Users\User\Source\Repos\ProyectoP3\HospitalAPP\obj\Debug\HospitalAPP.pdb
+C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\obj\Debug\HospitalAPP.dll
+C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\obj\Debug\HospitalAPP.pdb
+C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\bin\Debug\HospitalAPP.dll
+C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\bin\Debug\HospitalAPP.pdb

@@ -32,3 +32,9 @@ C:\Users\User\OneDrive\Escritorio\ProyectoCitas\GUIPrinc\obj\Debug\GUIPrinc.cspr
 C:\Users\User\OneDrive\Escritorio\ProyectoCitas\GUIPrinc\obj\Debug\GUIPrinc.exe
 C:\Users\User\OneDrive\Escritorio\ProyectoCitas\GUIPrinc\obj\Debug\GUIPrinc.pdb
 C:\Users\User\OneDrive\Escritorio\ProyectoCitas\GUIPrinc\obj\Debug\GUIPrinc.ProgramCita.resources
+C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\bin\Debug\HospitalAPP.dll
+C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\bin\Debug\Logica.dll
+C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\bin\Debug\HospitalAPP.pdb
+C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\bin\Debug\Logica.pdb
+C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\obj\Debug\GUIPrinc.ProgramCita.resources
+C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\obj\Debug\GUIPrinc.csproj.CopyComplete

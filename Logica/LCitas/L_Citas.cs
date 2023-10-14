@@ -8,6 +8,6 @@ namespace Logica.LCitas
 {
     public class L_Citas
     {
-
+        
     }
 }

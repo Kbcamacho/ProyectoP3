@@ -16,8 +16,8 @@ namespace HospitalAPP
 
         }
 
-        public Paciente(String nombre, String cedula, String telefono, String direccion, String correoElectronico, String sexo, String Ti
-        ) : base(nombre, cedula, telefono, direccion, correoElectronico, sexo)
+        public Paciente(String nombre, String cedula, String telefono, String direccion, String correoElectronico,
+            String sexo, String tipoSangre) : base(nombre, cedula, telefono, direccion, correoElectronico, sexo)
         {
             TipoSangre = tipoSangre;
         }

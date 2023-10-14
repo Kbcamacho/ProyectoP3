@@ -18,9 +18,10 @@ namespace HospitalAPP
         }
 
         public Doctor(String nombre, String cedula, String telefono, String direccion, String correoElectronico,
-            String sexo, double sueldo) : base(nombre, cedula, telefono, direccion, correoElectronico, sexo)
+            String sexo, String especialidad, bool disponibilidad) : base(nombre, cedula, telefono, direccion,
+            correoElectronico, sexo)
         {
-            Especialidad = nombre; 
+            Especialidad = especialidad;
             Disponibilidad = disponibilidad;
         }
     }

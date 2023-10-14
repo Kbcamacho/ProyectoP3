@@ -1,0 +1,9 @@
+C:\Users\camac\source\repos\HospitalAPP\Logica\bin\Debug\Logica.dll
+C:\Users\camac\source\repos\HospitalAPP\Logica\bin\Debug\Logica.pdb
+C:\Users\camac\source\repos\HospitalAPP\Logica\bin\Debug\HospitalAPP.dll
+C:\Users\camac\source\repos\HospitalAPP\Logica\bin\Debug\HospitalAPP.pdb
+C:\Users\camac\source\repos\HospitalAPP\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\camac\source\repos\HospitalAPP\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\camac\source\repos\HospitalAPP\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\camac\source\repos\HospitalAPP\Logica\obj\Debug\Logica.dll
+C:\Users\camac\source\repos\HospitalAPP\Logica\obj\Debug\Logica.pdb

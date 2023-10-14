@@ -10,10 +10,10 @@ namespace HospitalAPP
     public class Factura : Cita
     {
         public String IdFactura { get; set; }
-        public double Precio { get; set; }
+        public double Precio { get; set; } 
         public double Descuento { get; set; }
-        public Cita Cita { get; set; }
-        public Pago Pago { get; set; }
+        public Cita Cita { get; set; } = new Cita();
+        public Pago Pago { get; set; } = new Pago();
 
         public Factura()
         {
