@@ -8,58 +8,13 @@ using HospitalAPP;
 
 namespace Datos
 {
-    public class CitaRepository : Archivos
+    public class CitaRepository : ABSRepositorio<Cita>
     {
-        public CitaRepository(string FileName) : base(FileName)
-        {
-        }
 
-        public List<Cita> ConsultaCitas()
+        public CitaRepository()
         {
-            try
-            {
-                List<Cita> listaCitas = new List<Cita>();
-
-                StreamReader reader = new StreamReader(FileName);
-                while (!reader.EndOfStream)
-                {
-                    lista.add(new Mapear(reader.ReadLine()));
-                }
-                reader.Close();
-                return lista;
-            }
-            catch (Exception a)
-            {
-                Console.WriteLine(a);
-                throw;
-            }
-            return null;
+            Ruta = "Citas.txt";
         }
-
-        public Cita BuscarcCita(String id)
-        {
-            var lista = ConsultaCitas();
-            foreach (var item in lista)
-            {
-                if (item.IdCita == id)
-                {
-                    return item;
-                }
-            }
-            return null;
-        }
-
-        private Cita Mapear(String linea)
-        {
-            var datos = linea.Split(';');
-            Cita cita = new Cita();
-            cita.IdCita = datos[0];
-            cita.IdPaciente = datos[1];
-            cita.IdMedico = datos[2];
-            cita.Fecha = datos[3];
-            cita.Hora = datos[4];
-            cita.Estado = datos[5];
-            return cita;
-        }
+        
     }
 }

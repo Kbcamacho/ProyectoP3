@@ -155,7 +155,7 @@
             this.btnActuCita.Name = "btnActuCita";
             this.btnActuCita.Size = new System.Drawing.Size(199, 58);
             this.btnActuCita.TabIndex = 1;
-            this.btnActuCita.Text = "Actualziar Cita";
+            this.btnActuCita.Text = "Actualizar Cita";
             this.btnActuCita.UseVisualStyleBackColor = false;
             // 
             // btnVolver

@@ -41,10 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ABScrud.cs" />
+    <Compile Include="InterfacesIcrud.cs" />
     <Compile Include="LCitas\L_Citas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{f7a69a9b-f172-4bd5-b433-29cabf6271ca}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\HospitalAPP\Entidades.csproj">
       <Project>{aa656b41-36cc-4f80-a401-d8282daa8cbb}</Project>
       <Name>Entidades</Name>

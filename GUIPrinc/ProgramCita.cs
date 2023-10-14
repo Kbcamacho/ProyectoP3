@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HospitalAPP;
 
 namespace GUIPrinc
 {
@@ -31,6 +32,7 @@ namespace GUIPrinc
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
+            
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -41,6 +43,13 @@ namespace GUIPrinc
         private void ProgramCita_Load(object sender, EventArgs e)
         {
             btnProgramarCita.Enabled = false;
+        }
+
+        private void btnProgramarCita_Click(object sender, EventArgs e)
+        {
+            Cita cita = new();
+            cita.IdCita = 10000.ToString();
+            
         }
     }
 }
