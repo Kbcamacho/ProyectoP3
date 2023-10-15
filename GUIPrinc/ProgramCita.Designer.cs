@@ -28,14 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnVolverPC = new System.Windows.Forms.Button();
             this.btnProgramarCita = new System.Windows.Forms.Button();
             this.FechaCita = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
-            this.cmbEPS = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtNumCel = new System.Windows.Forms.TextBox();
@@ -51,20 +48,16 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightBlue;
-            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.btnVolverPC);
             this.panel1.Controls.Add(this.btnProgramarCita);
             this.panel1.Controls.Add(this.FechaCita);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.cmbEPS);
-            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.txtDireccion);
             this.panel1.Controls.Add(this.txtNumCel);
@@ -85,18 +78,18 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button2
+            // btnVolverPC
             // 
-            this.button2.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button2.Location = new System.Drawing.Point(479, 240);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 33);
-            this.button2.TabIndex = 19;
-            this.button2.Text = "Volver";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnVolverPC.BackColor = System.Drawing.Color.PaleVioletRed;
+            this.btnVolverPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolverPC.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnVolverPC.Location = new System.Drawing.Point(479, 240);
+            this.btnVolverPC.Name = "btnVolverPC";
+            this.btnVolverPC.Size = new System.Drawing.Size(100, 33);
+            this.btnVolverPC.TabIndex = 19;
+            this.btnVolverPC.Text = "Volver";
+            this.btnVolverPC.UseVisualStyleBackColor = false;
+            this.btnVolverPC.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnProgramarCita
             // 
@@ -125,39 +118,6 @@
             this.label10.Size = new System.Drawing.Size(119, 16);
             this.label10.TabIndex = 16;
             this.label10.Text = "Fecha para la Cita:";
-            // 
-            // cmbEPS
-            // 
-            this.cmbEPS.FormattingEnabled = true;
-            this.cmbEPS.Items.AddRange(new object[] {
-            "EPS SURA",
-            "EPS SANITAS",
-            "EPS FAMISANAR",
-            "SALUD TOTAL EPS",
-            "CAFESALUD EPS",
-            "NUEVA EPS",
-            "ALIANSALUD EPS",
-            "EPS COMPENSAR",
-            "EPS COOMEVA",
-            "EPS COOSALUD",
-            "EPS MEDIMÁS",
-            "EPS MUTUAL SER",
-            "EPS TITODAMP",
-            "NINGUNA",
-            "OTRA"});
-            this.cmbEPS.Location = new System.Drawing.Point(328, 139);
-            this.cmbEPS.Name = "cmbEPS";
-            this.cmbEPS.Size = new System.Drawing.Size(272, 24);
-            this.cmbEPS.TabIndex = 15;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(325, 119);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(37, 16);
-            this.label9.TabIndex = 14;
-            this.label9.Text = "EPS:";
             // 
             // label8
             // 
@@ -271,7 +231,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(16, 28);
+            this.txtNombre.Location = new System.Drawing.Point(17, 28);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(272, 22);
             this.txtNombre.TabIndex = 1;
@@ -282,9 +242,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 16);
+            this.label2.Size = new System.Drawing.Size(101, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Nombre Completo:";
+            this.label2.Text = "Primer Nombre:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
@@ -299,10 +259,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Programar una Cita.";
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // ProgramCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -311,6 +267,7 @@
             this.ClientSize = new System.Drawing.Size(643, 357);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ProgramCita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -318,7 +275,6 @@
             this.Load += new System.EventHandler(this.ProgramCita_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -342,12 +298,9 @@
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.TextBox txtNumCel;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cmbEPS;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnVolverPC;
         private System.Windows.Forms.Button btnProgramarCita;
         private System.Windows.Forms.DateTimePicker FechaCita;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -32,7 +33,7 @@ namespace GUIPrinc
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+           
         }
 
         private void label2_Click(object sender, EventArgs e)

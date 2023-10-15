@@ -10,3 +10,9 @@ C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\obj\Debug\HospitalAPP.dll
 C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\obj\Debug\HospitalAPP.pdb
 C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\bin\Debug\HospitalAPP.dll
 C:\Users\camac\source\repos\HospitalAPP\HospitalAPP\bin\Debug\HospitalAPP.pdb
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\HospitalAPP\bin\Debug\HospitalAPP.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\HospitalAPP\bin\Debug\HospitalAPP.pdb
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\HospitalAPP\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\HospitalAPP\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\HospitalAPP\obj\Debug\HospitalAPP.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\HospitalAPP\obj\Debug\HospitalAPP.pdb
