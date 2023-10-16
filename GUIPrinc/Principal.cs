@@ -118,5 +118,17 @@ namespace GUIPrinc
         {
 
         }
+
+        private void btnVolverPR_Click(object sender, EventArgs e)
+        {
+            Form btVolverPR = new Login();
+            btVolverPR.Show();
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

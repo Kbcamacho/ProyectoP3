@@ -63,3 +63,49 @@ C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\bin\Debug\System.Buffers.xml
 C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\obj\Debug\GUIPrinc.csproj.SuggestedBindingRedirects.cache
 C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\obj\Debug\GUIPrinc.exe.config
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.exe.config
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.GestCitas.resources
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.Principal.resources
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.ProgramCita.resources
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.Properties.Resources.resources
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.csproj.GenerateResource.cache
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.exe
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.pdb
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\GUIPrinc.exe.config
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\GUIPrinc.exe
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\GUIPrinc.pdb
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\HospitalAPP.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Logica.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Datos.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Text.Json.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Memory.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.ValueTuple.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Buffers.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\HospitalAPP.pdb
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Logica.pdb
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Datos.pdb
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Datos.dll.config
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Text.Json.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Memory.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.ValueTuple.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Buffers.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.csproj.CopyComplete
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.Login.resources
+C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\GUIPrinc\obj\Debug\GUIPrinc.LoginRegistrar.resources
+C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\obj\Debug\GUIPrinc.Login.resources
+C:\Users\camac\source\repos\HospitalAPP\GUIPrinc\obj\Debug\GUIPrinc.LoginRegistrar.resources
