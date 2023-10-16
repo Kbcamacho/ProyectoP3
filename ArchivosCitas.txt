@@ -1,0 +1,9 @@
+Nombre del Paciente: Dmeste
+Tipo de Identificación: Cedula de Ciudadanía
+Identificación: 1065789345
+Genero: Hombre
+Numero Celular: 31555555555
+Dirección: Mnz 43 Casa 1 Garupal Segunda Etapa
+Tipo de Cita: Urologia
+
+

@@ -63,9 +63,52 @@ namespace GUIPrinc
             txtEdadCC.Clear();
             cmbEspeCC.Items.Clear();
 
+            Form btCrearDoc = new Principal();
+            btCrearDoc.Show();
+            this.Close();
+
         }
 
         private void txtUserPaCC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCrearPacCC_Click(object sender, EventArgs e)
+        {
+            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\ArchivosPac.txt", true);
+            try
+            {
+                escribir.WriteLine("Usuario: " + txtUserPaCC.Text);
+                escribir.WriteLine("Password: " + txtPassPaCC.Text);
+                escribir.WriteLine("Identificación: " + txtIdenPaCC.Text);
+                escribir.WriteLine("Numero Celular: " + txtNumPaCC.Text);
+                escribir.WriteLine("Correo: " + txtCorreoPaCC.Text);
+                escribir.WriteLine("Edad: " + txtEdadPaCC.Text);
+                escribir.WriteLine("Genero: " + cmbGeneroPaCC.Text);
+                escribir.WriteLine("\n");
+            }
+            catch
+            {
+                MessageBox.Show("ERROR");
+            }
+            escribir.Close();
+
+            txtUserPaCC.Clear();
+            txtPassPaCC.Clear();
+            txtIdenPaCC.Clear();
+            txtNumPaCC.Clear();
+            txtCorreoPaCC.Clear();
+            txtEdadPaCC.Clear();
+            cmbGeneroPaCC.Items.Clear();
+
+            Form btCrearPac = new Principal();
+            btCrearPac.Show();
+            this.Close();
+
+        }
+
+        private void txtPassPaCC_TextChanged(object sender, EventArgs e)
         {
 
         }

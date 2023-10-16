@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,14 +44,59 @@ namespace GUIPrinc
 
         private void ProgramCita_Load(object sender, EventArgs e)
         {
-            btnProgramarCita.Enabled = false;
+            
         }
 
         private void btnProgramarCita_Click(object sender, EventArgs e)
         {
-            Cita cita = new();
-            cita.IdCita = 10000.ToString();
+            //Cita cita = new();
+            //cita.IdCita = 10000.ToString();
+
+            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\ArchivosCitas.txt", true);
+            try
+            {
+                escribir.WriteLine("Nombre del Paciente: " + txtNombre.Text);
+                escribir.WriteLine("Tipo de Identificación: " + cmbTipoIdent.Text);
+                escribir.WriteLine("Identificación: " + txtIdent.Text);
+                escribir.WriteLine("Genero: " + cmbGenero.Text);
+                escribir.WriteLine("Numero Celular: " + txtNumCel.Text);
+                escribir.WriteLine("Dirección: " + txtDireccion.Text);
+                escribir.WriteLine("Tipo de Cita: " + cmbTipoCita.Text);
+                escribir.WriteLine("\n");
+            }
+            catch
+            {
+                MessageBox.Show("ERROR");
+            }
+            escribir.Close();
+
+            txtNombre.Clear();
+            cmbTipoIdent.Items.Clear();
+            txtIdent.Clear();
+            cmbGenero.Items.Clear();
+            txtNumCel.Clear();
+            txtDireccion.Clear();
+            cmbTipoCita.Items.Clear();
+
             
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiarPC_Click(object sender, EventArgs e)
+        {
+            txtNombre.Clear();
+            cmbTipoIdent.Items.Clear();
+            txtIdent.Clear();
+            cmbGenero.Items.Clear();
+            txtNumCel.Clear();
+            txtDireccion.Clear();
+            cmbTipoCita.Items.Clear();
+
         }
     }
 }

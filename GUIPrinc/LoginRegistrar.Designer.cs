@@ -118,7 +118,7 @@
             // 
             // cmbGeneroPaCC
             // 
-            this.cmbGeneroPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbGeneroPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbGeneroPaCC.FormattingEnabled = true;
             this.cmbGeneroPaCC.Items.AddRange(new object[] {
             "Hombre",
@@ -151,9 +151,11 @@
             this.btnCrearPacCC.TabIndex = 12;
             this.btnCrearPacCC.Text = "Crear";
             this.btnCrearPacCC.UseVisualStyleBackColor = false;
+            this.btnCrearPacCC.Click += new System.EventHandler(this.btnCrearPacCC_Click);
             // 
             // txtEdadPaCC
             // 
+            this.txtEdadPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEdadPaCC.Location = new System.Drawing.Point(222, 250);
             this.txtEdadPaCC.Name = "txtEdadPaCC";
             this.txtEdadPaCC.Size = new System.Drawing.Size(296, 27);
@@ -161,6 +163,7 @@
             // 
             // txtCorreoPaCC
             // 
+            this.txtCorreoPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCorreoPaCC.Location = new System.Drawing.Point(222, 208);
             this.txtCorreoPaCC.Name = "txtCorreoPaCC";
             this.txtCorreoPaCC.Size = new System.Drawing.Size(296, 27);
@@ -168,6 +171,7 @@
             // 
             // txtNumPaCC
             // 
+            this.txtNumPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNumPaCC.Location = new System.Drawing.Point(222, 165);
             this.txtNumPaCC.Name = "txtNumPaCC";
             this.txtNumPaCC.Size = new System.Drawing.Size(296, 27);
@@ -175,6 +179,7 @@
             // 
             // txtIdenPaCC
             // 
+            this.txtIdenPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdenPaCC.Location = new System.Drawing.Point(222, 123);
             this.txtIdenPaCC.Name = "txtIdenPaCC";
             this.txtIdenPaCC.Size = new System.Drawing.Size(296, 27);
@@ -182,13 +187,16 @@
             // 
             // txtPassPaCC
             // 
-            this.txtPassPaCC.Location = new System.Drawing.Point(222, 81);
+            this.txtPassPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassPaCC.Location = new System.Drawing.Point(223, 81);
             this.txtPassPaCC.Name = "txtPassPaCC";
             this.txtPassPaCC.Size = new System.Drawing.Size(296, 27);
             this.txtPassPaCC.TabIndex = 7;
+            this.txtPassPaCC.TextChanged += new System.EventHandler(this.txtPassPaCC_TextChanged);
             // 
             // txtUserPaCC
             // 
+            this.txtUserPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUserPaCC.Location = new System.Drawing.Point(222, 41);
             this.txtUserPaCC.Name = "txtUserPaCC";
             this.txtUserPaCC.Size = new System.Drawing.Size(296, 27);
@@ -296,7 +304,7 @@
             // 
             // cmbEspeCC
             // 
-            this.cmbEspeCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbEspeCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbEspeCC.FormattingEnabled = true;
             this.cmbEspeCC.Items.AddRange(new object[] {
             "Acupuntura",
