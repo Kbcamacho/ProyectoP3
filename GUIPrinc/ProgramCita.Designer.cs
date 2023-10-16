@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnLimpiarPC = new System.Windows.Forms.Button();
+            this.cmbTipoCita = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.btnVolverPC = new System.Windows.Forms.Button();
             this.btnProgramarCita = new System.Windows.Forms.Button();
             this.FechaCita = new System.Windows.Forms.DateTimePicker();
@@ -48,9 +51,6 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbTipoCita = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.btnLimpiarPC = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -83,6 +83,62 @@
             this.panel1.Size = new System.Drawing.Size(619, 294);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnLimpiarPC
+            // 
+            this.btnLimpiarPC.BackColor = System.Drawing.Color.Wheat;
+            this.btnLimpiarPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarPC.Location = new System.Drawing.Point(434, 240);
+            this.btnLimpiarPC.Name = "btnLimpiarPC";
+            this.btnLimpiarPC.Size = new System.Drawing.Size(84, 32);
+            this.btnLimpiarPC.TabIndex = 22;
+            this.btnLimpiarPC.Text = "Limpiar";
+            this.btnLimpiarPC.UseVisualStyleBackColor = false;
+            this.btnLimpiarPC.Click += new System.EventHandler(this.btnLimpiarPC_Click);
+            // 
+            // cmbTipoCita
+            // 
+            this.cmbTipoCita.FormattingEnabled = true;
+            this.cmbTipoCita.Items.AddRange(new object[] {
+            "Acupuntura",
+            "Cardiologia",
+            "Cirugia General",
+            "Cirugia Maxilofacial (odontologia)",
+            "Cirugia Plastica",
+            "Dermatologia",
+            "Endocrinologia",
+            "Endodoncia",
+            "Gastroenterologia",
+            "Laboratorio Clinico",
+            "Medicina General",
+            "Neumologia",
+            "Neurologia",
+            "Nutricion y Dietetica",
+            "Odontologia",
+            "Odontologia Estetica",
+            "Odontologia Pediatrica",
+            "Oftalmologia",
+            "Optometria",
+            "Ortodoncia",
+            "Otorrinolaringologia",
+            "Psicologia",
+            "Radiologia",
+            "Urologia",
+            "Vacunacion"});
+            this.cmbTipoCita.Location = new System.Drawing.Point(328, 139);
+            this.cmbTipoCita.Name = "cmbTipoCita";
+            this.cmbTipoCita.Size = new System.Drawing.Size(272, 24);
+            this.cmbTipoCita.TabIndex = 21;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(325, 119);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(83, 16);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Tipo de Cita:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // btnVolverPC
             // 
@@ -164,7 +220,7 @@
             "Hombre",
             "Mujer",
             "No binario",
-            "Transecual",
+            "Transexual",
             "Otro"});
             this.cmbGenero.Location = new System.Drawing.Point(16, 249);
             this.cmbGenero.Name = "cmbGenero";
@@ -264,62 +320,6 @@
             this.label1.Size = new System.Drawing.Size(245, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Programar una Cita.";
-            // 
-            // cmbTipoCita
-            // 
-            this.cmbTipoCita.FormattingEnabled = true;
-            this.cmbTipoCita.Items.AddRange(new object[] {
-            "Acupuntura",
-            "Cardiologia",
-            "Cirugia General",
-            "Cirugia Maxilofacial (odontologia)",
-            "Cirugia Plastica",
-            "Dermatologia",
-            "Endocrinologia",
-            "Endodoncia",
-            "Gastroenterologia",
-            "Laboratorio Clinico",
-            "Medicina General",
-            "Neumologia",
-            "Neurologia",
-            "Nutricion y Dietetica",
-            "Odontologia",
-            "Odontologia Estetica",
-            "Odontologia Pediatrica",
-            "Oftalmologia",
-            "Optometria",
-            "Ortodoncia",
-            "Otorrinolaringologia",
-            "Psicologia",
-            "Radiologia",
-            "Urologia",
-            "Vacunacion"});
-            this.cmbTipoCita.Location = new System.Drawing.Point(328, 139);
-            this.cmbTipoCita.Name = "cmbTipoCita";
-            this.cmbTipoCita.Size = new System.Drawing.Size(272, 24);
-            this.cmbTipoCita.TabIndex = 21;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(325, 119);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(83, 16);
-            this.label9.TabIndex = 20;
-            this.label9.Text = "Tipo de Cita:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // btnLimpiarPC
-            // 
-            this.btnLimpiarPC.BackColor = System.Drawing.Color.Wheat;
-            this.btnLimpiarPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarPC.Location = new System.Drawing.Point(434, 240);
-            this.btnLimpiarPC.Name = "btnLimpiarPC";
-            this.btnLimpiarPC.Size = new System.Drawing.Size(84, 32);
-            this.btnLimpiarPC.TabIndex = 22;
-            this.btnLimpiarPC.Text = "Limpiar";
-            this.btnLimpiarPC.UseVisualStyleBackColor = false;
-            this.btnLimpiarPC.Click += new System.EventHandler(this.btnLimpiarPC_Click);
             // 
             // ProgramCita
             // 

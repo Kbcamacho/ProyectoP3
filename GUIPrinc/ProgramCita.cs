@@ -51,15 +51,16 @@ namespace GUIPrinc
         {
             //Cita cita = new();
             //cita.IdCita = 10000.ToString();
+            //C:\Users\User\OneDrive\Escritorio\P3
 
-            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\ArchivosCitas.txt", true);
+            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\ArchivosCitas.txt", true);
             try
             {
-                escribir.WriteLine("Nombre del Paciente: " + txtNombre.Text);
-                escribir.WriteLine("Tipo de Identificación: " + cmbTipoIdent.Text);
+                escribir.WriteLine("Nom. Paciente: " + txtNombre.Text);
+                escribir.WriteLine("Tipo Ident: " + cmbTipoIdent.Text);
                 escribir.WriteLine("Identificación: " + txtIdent.Text);
                 escribir.WriteLine("Genero: " + cmbGenero.Text);
-                escribir.WriteLine("Numero Celular: " + txtNumCel.Text);
+                escribir.WriteLine("Celular: " + txtNumCel.Text);
                 escribir.WriteLine("Dirección: " + txtDireccion.Text);
                 escribir.WriteLine("Tipo de Cita: " + cmbTipoCita.Text);
                 escribir.WriteLine("\n");

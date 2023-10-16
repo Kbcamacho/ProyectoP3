@@ -1,9 +1,18 @@
-Nombre del Paciente: Dmeste
-Tipo de Identificación: Cedula de Ciudadanía
-Identificación: 1065789345
+Nom. Paciente: Lia
+Tipo Ident: Cedula de Ciudadanía
+Identificación: 26877157
+Genero: Mujer
+Celular: 3007948217
+Dirección: Mnz 43 Casa 1 Garupal 2
+Tipo de Cita: Odontologia
+
+
+Nom. Paciente: Max
+Tipo Ident: Pasaporte
+Identificación: 44848484
 Genero: Hombre
-Numero Celular: 31555555555
-Dirección: Mnz 43 Casa 1 Garupal Segunda Etapa
-Tipo de Cita: Urologia
+Celular: 154545
+Dirección: admadm 77 jajwjd7
+Tipo de Cita: Cirugia Maxilofacial (odontologia)
 
 

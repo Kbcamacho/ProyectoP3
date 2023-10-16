@@ -205,11 +205,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(435, 485);
+            this.button1.BackColor = System.Drawing.Color.LightCyan;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Crimson;
+            this.button1.Location = new System.Drawing.Point(424, 483);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(46, 26);
+            this.button1.Size = new System.Drawing.Size(57, 28);
             this.button1.TabIndex = 7;
             this.button1.Text = "Salir";
             this.button1.UseVisualStyleBackColor = false;

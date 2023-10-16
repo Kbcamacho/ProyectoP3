@@ -37,7 +37,7 @@ namespace GUIPrinc
 
         private void btnCrearDocCC_Click(object sender, EventArgs e)
         {
-            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\ArchivosDoc.txt", true);
+            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\ArchivosDoc.txt", true);
             try
             {
                 escribir.WriteLine("Usuario: " + txtUserCC.Text);
@@ -76,7 +76,7 @@ namespace GUIPrinc
 
         private void btnCrearPacCC_Click(object sender, EventArgs e)
         {
-            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\ArchivosPac.txt", true);
+            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\ArchivosPac.txt", true);
             try
             {
                 escribir.WriteLine("Usuario: " + txtUserPaCC.Text);

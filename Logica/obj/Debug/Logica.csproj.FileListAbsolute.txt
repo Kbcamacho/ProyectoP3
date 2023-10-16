@@ -62,3 +62,35 @@ C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\Logica\obj\Debug\Logica
 C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\Logica\obj\Debug\Logica.dll
 C:\Users\User\OneDrive\Escritorio\Proyecto P3\ProyectoP3\Logica\obj\Debug\Logica.pdb
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Logica.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Logica.pdb
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Datos.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\HospitalAPP.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Text.Json.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Memory.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.ValueTuple.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Buffers.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Datos.pdb
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Datos.dll.config
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\HospitalAPP.pdb
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Text.Json.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Memory.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.ValueTuple.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Buffers.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\OneDrive\Escritorio\P3\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Escritorio\P3\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Escritorio\P3\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\User\OneDrive\Escritorio\P3\Logica\obj\Debug\Logica.dll
+C:\Users\User\OneDrive\Escritorio\P3\Logica\obj\Debug\Logica.pdb
