@@ -37,19 +37,35 @@ namespace GUIPrinc
 
         private void btnCrearDocCC_Click(object sender, EventArgs e)
         {
+            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\UsuariosDoc.txt", true);
             try
             {
-                TextWriter RegistrarDoctor = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\HospitalAPP\bin\Debug\" + txtUserCC.Text + ".txt", true);
-                RegistrarDoctor.WriteLine(txtPassCC.Text);
-                RegistrarDoctor.Close();
+                escribir.WriteLine("Usuario: " + txtUserCC.Text);
+                escribir.WriteLine("Password: " + txtPassCC.Text);
+                escribir.WriteLine("Identificación: " + txtIdenCC.Text);
+                escribir.WriteLine("Numero Celular: " + txtNumCC.Text);
+                escribir.WriteLine("Correo: " + txtCorreoCC.Text);
+                escribir.WriteLine("Edad: " + txtEdadCC.Text);
+                escribir.WriteLine("Especialidad: " + cmbEspeCC.Text);
+                escribir.WriteLine("\n");
 
-                MessageBox.Show("El Doctor fue registrado");
+                MessageBox.Show("Usuario Creado");
+
+                txtUserCC.Clear();
+                txtPassCC.Clear();
+                txtIdenCC.Clear();
+                txtNumCC.Clear();
+                txtCorreoCC.Clear();
+                txtEdadCC.Clear();
+                cmbEspeCC.Items.Clear();
+
             }
-            catch (Exception x)
+            catch
             {
-                MessageBox.Show("Hubo un Error" + x, "Error");
+                MessageBox.Show("ERROR");
             }
-            
+            escribir.Close();
+
         }
 
         private void txtUserPaCC_TextChanged(object sender, EventArgs e)
@@ -59,18 +75,35 @@ namespace GUIPrinc
 
         private void btnCrearPacCC_Click(object sender, EventArgs e)
         {
+            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\UsuariosPac.txt", true);
             try
             {
-                TextWriter RegistrarPaciente = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\HospitalAPP\bin\Debug\" + txtUserPaCC, true);
-                RegistrarPaciente.WriteLine(txtPassPaCC.Text);
-                RegistrarPaciente.Close();
+                escribir.WriteLine("Usuario: " + txtUserPaCC.Text);
+                escribir.WriteLine("Password: " + txtPassPaCC.Text);
+                escribir.WriteLine("Identificación: " + txtIdenPaCC.Text);
+                escribir.WriteLine("Numero Celular: " + txtNumPaCC.Text);
+                escribir.WriteLine("Correo: " + txtCorreoPaCC.Text);
+                escribir.WriteLine("Edad: " + txtEdadPaCC.Text);
+                escribir.WriteLine("Genero: " + cmbGeneroPaCC.Text);
+                escribir.WriteLine("\n");
 
-                MessageBox.Show("El Paciente fue registrado");
+                MessageBox.Show("Usuario Creado");
+
+                txtUserPaCC.Clear();
+                txtPassPaCC.Clear();
+                txtIdenPaCC.Clear();
+                txtNumPaCC.Clear();
+                txtCorreoPaCC.Clear();
+                txtEdadPaCC.Clear();
+                cmbGeneroPaCC.Items.Clear();
+
             }
-            catch (Exception z)
+            catch
             {
                 MessageBox.Show("ERROR");
             }
+            escribir.Close();
+
         }
 
         private void txtPassPaCC_TextChanged(object sender, EventArgs e)

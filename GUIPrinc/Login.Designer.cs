@@ -35,8 +35,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnLimpiarIS = new System.Windows.Forms.Button();
             this.btnIngresarIS = new System.Windows.Forms.Button();
-            this.txtContrasenaIS = new System.Windows.Forms.TextBox();
-            this.txtUsuarioIS = new System.Windows.Forms.TextBox();
+            this.txtPassPaCC = new System.Windows.Forms.TextBox();
+            this.txtUserPaCC = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -63,8 +63,8 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnLimpiarIS);
             this.groupBox1.Controls.Add(this.btnIngresarIS);
-            this.groupBox1.Controls.Add(this.txtContrasenaIS);
-            this.groupBox1.Controls.Add(this.txtUsuarioIS);
+            this.groupBox1.Controls.Add(this.txtPassPaCC);
+            this.groupBox1.Controls.Add(this.txtUserPaCC);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -122,20 +122,20 @@
             this.btnIngresarIS.UseVisualStyleBackColor = false;
             this.btnIngresarIS.Click += new System.EventHandler(this.btnIngresarIS_Click);
             // 
-            // txtContrasenaIS
+            // txtPassPaCC
             // 
-            this.txtContrasenaIS.Location = new System.Drawing.Point(113, 85);
-            this.txtContrasenaIS.Name = "txtContrasenaIS";
-            this.txtContrasenaIS.PasswordChar = '*';
-            this.txtContrasenaIS.Size = new System.Drawing.Size(346, 27);
-            this.txtContrasenaIS.TabIndex = 3;
+            this.txtPassPaCC.Location = new System.Drawing.Point(113, 85);
+            this.txtPassPaCC.Name = "txtPassPaCC";
+            this.txtPassPaCC.PasswordChar = '*';
+            this.txtPassPaCC.Size = new System.Drawing.Size(346, 27);
+            this.txtPassPaCC.TabIndex = 3;
             // 
-            // txtUsuarioIS
+            // txtUserPaCC
             // 
-            this.txtUsuarioIS.Location = new System.Drawing.Point(113, 38);
-            this.txtUsuarioIS.Name = "txtUsuarioIS";
-            this.txtUsuarioIS.Size = new System.Drawing.Size(346, 27);
-            this.txtUsuarioIS.TabIndex = 2;
+            this.txtUserPaCC.Location = new System.Drawing.Point(113, 38);
+            this.txtUserPaCC.Name = "txtUserPaCC";
+            this.txtUserPaCC.Size = new System.Drawing.Size(346, 27);
+            this.txtUserPaCC.TabIndex = 2;
             // 
             // label3
             // 
@@ -196,8 +196,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnLimpiarIS;
         private System.Windows.Forms.Button btnIngresarIS;
-        private System.Windows.Forms.TextBox txtContrasenaIS;
-        private System.Windows.Forms.TextBox txtUsuarioIS;
+        private System.Windows.Forms.TextBox txtPassPaCC;
+        private System.Windows.Forms.TextBox txtUserPaCC;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label4;

@@ -35,7 +35,9 @@ namespace GUIPrinc
 
         private void btnIngresarIS_Click(object sender, EventArgs e)
         {
-            TextReader Inicio = new StreamReader(txtUsuarioIS.Text + ".txt");
+            Form btPrincipal = new Principal();
+            btPrincipal.Show();
+            this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -47,8 +49,8 @@ namespace GUIPrinc
 
         private void btnLimpiarIS_Click(object sender, EventArgs e)
         {
-            txtContrasenaIS.Clear();
-            txtUsuarioIS.Clear();
+            txtPassPaCC.Clear();
+            txtUserPaCC.Clear();
         }
 
         private void Login_Load(object sender, EventArgs e)
