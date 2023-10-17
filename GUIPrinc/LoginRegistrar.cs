@@ -37,36 +37,19 @@ namespace GUIPrinc
 
         private void btnCrearDocCC_Click(object sender, EventArgs e)
         {
-            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\ArchivosDoc.txt", true);
             try
             {
-                escribir.WriteLine("Usuario: " + txtUserCC.Text);
-                escribir.WriteLine("Password: " + txtPassCC.Text);
-                escribir.WriteLine("Identificación: " + txtIdenCC.Text);
-                escribir.WriteLine("Numero Celular: " + txtNumCC.Text);
-                escribir.WriteLine("Correo: " + txtCorreoCC.Text);
-                escribir.WriteLine("Edad: " + txtEdadCC.Text);
-                escribir.WriteLine("Especialidad: " + cmbEspeCC.Text);
-                escribir.WriteLine("\n");
+                TextWriter RegistrarDoctor = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\HospitalAPP\bin\Debug\" + txtUserCC.Text + ".txt", true);
+                RegistrarDoctor.WriteLine(txtPassCC.Text);
+                RegistrarDoctor.Close();
+
+                MessageBox.Show("El Doctor fue registrado");
             }
-            catch
+            catch (Exception x)
             {
-                MessageBox.Show("ERROR");
+                MessageBox.Show("Hubo un Error" + x, "Error");
             }
-            escribir.Close();
             
-            txtUserCC.Clear();
-            txtPassCC.Clear();
-            txtIdenCC.Clear();
-            txtNumCC.Clear();
-            txtCorreoCC.Clear();
-            txtEdadCC.Clear();
-            cmbEspeCC.Items.Clear();
-
-            Form btCrearDoc = new Principal();
-            btCrearDoc.Show();
-            this.Close();
-
         }
 
         private void txtUserPaCC_TextChanged(object sender, EventArgs e)
@@ -76,24 +59,38 @@ namespace GUIPrinc
 
         private void btnCrearPacCC_Click(object sender, EventArgs e)
         {
-            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\ArchivosPac.txt", true);
             try
             {
-                escribir.WriteLine("Usuario: " + txtUserPaCC.Text);
-                escribir.WriteLine("Password: " + txtPassPaCC.Text);
-                escribir.WriteLine("Identificación: " + txtIdenPaCC.Text);
-                escribir.WriteLine("Numero Celular: " + txtNumPaCC.Text);
-                escribir.WriteLine("Correo: " + txtCorreoPaCC.Text);
-                escribir.WriteLine("Edad: " + txtEdadPaCC.Text);
-                escribir.WriteLine("Genero: " + cmbGeneroPaCC.Text);
-                escribir.WriteLine("\n");
+                TextWriter RegistrarPaciente = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\HospitalAPP\bin\Debug\" + txtUserPaCC, true);
+                RegistrarPaciente.WriteLine(txtPassPaCC.Text);
+                RegistrarPaciente.Close();
+
+                MessageBox.Show("El Paciente fue registrado");
             }
-            catch
+            catch (Exception z)
             {
                 MessageBox.Show("ERROR");
             }
-            escribir.Close();
+        }
 
+        private void txtPassPaCC_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiarCD_Click(object sender, EventArgs e)
+        {
+            txtUserCC.Clear();
+            txtPassCC.Clear();
+            txtIdenCC.Clear();
+            txtNumCC.Clear();
+            txtCorreoCC.Clear();
+            txtEdadCC.Clear();
+            cmbEspeCC.Items.Clear();
+        }
+
+        private void btnLimpiarCP_Click(object sender, EventArgs e)
+        {
             txtUserPaCC.Clear();
             txtPassPaCC.Clear();
             txtIdenPaCC.Clear();
@@ -101,16 +98,6 @@ namespace GUIPrinc
             txtCorreoPaCC.Clear();
             txtEdadPaCC.Clear();
             cmbGeneroPaCC.Items.Clear();
-
-            Form btCrearPac = new Principal();
-            btCrearPac.Show();
-            this.Close();
-
-        }
-
-        private void txtPassPaCC_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

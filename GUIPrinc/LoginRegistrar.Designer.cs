@@ -63,6 +63,8 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.btnLimpiarCD = new System.Windows.Forms.Button();
+            this.btnLimpiarCP = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -81,7 +83,7 @@
             // 
             this.btnVolverCC.BackColor = System.Drawing.Color.PaleVioletRed;
             this.btnVolverCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolverCC.Location = new System.Drawing.Point(984, 32);
+            this.btnVolverCC.Location = new System.Drawing.Point(28, 32);
             this.btnVolverCC.Name = "btnVolverCC";
             this.btnVolverCC.Size = new System.Drawing.Size(104, 31);
             this.btnVolverCC.TabIndex = 0;
@@ -91,6 +93,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnLimpiarCP);
             this.groupBox1.Controls.Add(this.cmbGeneroPaCC);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.btnCrearPacCC);
@@ -144,6 +147,7 @@
             // btnCrearPacCC
             // 
             this.btnCrearPacCC.BackColor = System.Drawing.Color.LightBlue;
+            this.btnCrearPacCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearPacCC.ForeColor = System.Drawing.Color.Black;
             this.btnCrearPacCC.Location = new System.Drawing.Point(444, 340);
             this.btnCrearPacCC.Name = "btnCrearPacCC";
@@ -266,6 +270,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnLimpiarCD);
             this.groupBox2.Controls.Add(this.btnCrearDocCC);
             this.groupBox2.Controls.Add(this.cmbEspeCC);
             this.groupBox2.Controls.Add(this.label13);
@@ -293,6 +298,7 @@
             // btnCrearDocCC
             // 
             this.btnCrearDocCC.BackColor = System.Drawing.Color.LightBlue;
+            this.btnCrearDocCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearDocCC.ForeColor = System.Drawing.Color.Black;
             this.btnCrearDocCC.Location = new System.Drawing.Point(442, 340);
             this.btnCrearDocCC.Name = "btnCrearDocCC";
@@ -455,6 +461,32 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "Nombre de Usuario:";
             // 
+            // btnLimpiarCD
+            // 
+            this.btnLimpiarCD.BackColor = System.Drawing.Color.LightBlue;
+            this.btnLimpiarCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCD.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpiarCD.Location = new System.Drawing.Point(343, 340);
+            this.btnLimpiarCD.Name = "btnLimpiarCD";
+            this.btnLimpiarCD.Size = new System.Drawing.Size(93, 36);
+            this.btnLimpiarCD.TabIndex = 27;
+            this.btnLimpiarCD.Text = "Limpiar";
+            this.btnLimpiarCD.UseVisualStyleBackColor = false;
+            this.btnLimpiarCD.Click += new System.EventHandler(this.btnLimpiarCD_Click);
+            // 
+            // btnLimpiarCP
+            // 
+            this.btnLimpiarCP.BackColor = System.Drawing.Color.LightBlue;
+            this.btnLimpiarCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCP.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpiarCP.Location = new System.Drawing.Point(344, 340);
+            this.btnLimpiarCP.Name = "btnLimpiarCP";
+            this.btnLimpiarCP.Size = new System.Drawing.Size(94, 36);
+            this.btnLimpiarCP.TabIndex = 28;
+            this.btnLimpiarCP.Text = "Limpiar";
+            this.btnLimpiarCP.UseVisualStyleBackColor = false;
+            this.btnLimpiarCP.Click += new System.EventHandler(this.btnLimpiarCP_Click);
+            // 
             // LoginRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -515,5 +547,7 @@
         private System.Windows.Forms.TextBox txtIdenCC;
         private System.Windows.Forms.TextBox txtPassCC;
         private System.Windows.Forms.TextBox txtUserCC;
+        private System.Windows.Forms.Button btnLimpiarCP;
+        private System.Windows.Forms.Button btnLimpiarCD;
     }
 }

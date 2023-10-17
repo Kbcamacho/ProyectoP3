@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace GUIPrinc
 {
@@ -34,7 +35,7 @@ namespace GUIPrinc
 
         private void btnIngresarIS_Click(object sender, EventArgs e)
         {
-
+            TextReader Inicio = new StreamReader(txtUsuarioIS.Text + ".txt");
         }
 
         private void button1_Click(object sender, EventArgs e)
