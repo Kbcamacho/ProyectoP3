@@ -35,9 +35,31 @@ namespace GUIPrinc
 
         private void btnIngresarIS_Click(object sender, EventArgs e)
         {
-            Form btPrincipal = new Principal();
-            btPrincipal.Show();
+
+            Form btIngresar = new Principal();
+            btIngresar.Show();
             this.Hide();
+
+            //TextReader Inicio = new StreamReader(txtUserPaCC.Text + ".txt");
+
+            //try
+            //{
+            //    if (Inicio.ReadLine() == txtPassPaCC.Text)
+            //    {
+            //        MessageBox.Show("Iniciado");
+            //        //Form btIngresar = new Principal();
+            //        //btIngresar.Show();
+            //        //this.Hide();
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Verifique sus datos");
+            //    }
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Hubo un error, intente nuevamente");
+            //}
         }
 
         private void button1_Click(object sender, EventArgs e)

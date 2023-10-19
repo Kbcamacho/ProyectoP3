@@ -75,34 +75,19 @@ namespace GUIPrinc
 
         private void btnCrearPacCC_Click(object sender, EventArgs e)
         {
-            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\UsuariosPac.txt", true);
             try
             {
-                escribir.WriteLine("Usuario: " + txtUserPaCC.Text);
-                escribir.WriteLine("Password: " + txtPassPaCC.Text);
-                escribir.WriteLine("Identificación: " + txtIdenPaCC.Text);
-                escribir.WriteLine("Numero Celular: " + txtNumPaCC.Text);
-                escribir.WriteLine("Correo: " + txtCorreoPaCC.Text);
-                escribir.WriteLine("Edad: " + txtEdadPaCC.Text);
-                escribir.WriteLine("Genero: " + cmbGeneroPaCC.Text);
-                escribir.WriteLine("\n");
+                TextWriter RegistrarUser = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\" + txtUserPaCC.Text + ".txt", true);
+                RegistrarUser.WriteLine(txtPassPaCC.Text);
+                RegistrarUser.Close();
 
-                MessageBox.Show("Usuario Creado");
-
-                txtUserPaCC.Clear();
-                txtPassPaCC.Clear();
-                txtIdenPaCC.Clear();
-                txtNumPaCC.Clear();
-                txtCorreoPaCC.Clear();
-                txtEdadPaCC.Clear();
-                cmbGeneroPaCC.Items.Clear();
+                MessageBox.Show("Usuario Registrado");
 
             }
             catch
             {
-                MessageBox.Show("ERROR");
+                MessageBox.Show("No se pudo guardar");
             }
-            escribir.Close();
 
         }
 
