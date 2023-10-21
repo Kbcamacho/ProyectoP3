@@ -35,31 +35,27 @@ namespace GUIPrinc
 
         private void btnIngresarIS_Click(object sender, EventArgs e)
         {
+            try
+            {
 
-            Form btIngresar = new Principal();
-            btIngresar.Show();
-            this.Hide();
+                TextReader Inicio = new StreamReader(txtUserPaCC.Text + ".txt");
 
-            //TextReader Inicio = new StreamReader(txtUserPaCC.Text + ".txt");
-
-            //try
-            //{
-            //    if (Inicio.ReadLine() == txtPassPaCC.Text)
-            //    {
-            //        MessageBox.Show("Iniciado");
-            //        //Form btIngresar = new Principal();
-            //        //btIngresar.Show();
-            //        //this.Hide();
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Verifique sus datos");
-            //    }
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("Hubo un error, intente nuevamente");
-            //}
+                if (Inicio.ReadLine() == txtPassPaCC.Text)
+                {
+                    MessageBox.Show("Se Inicio Sesion", "¡Correcto!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Form btIngresar = new Principal();
+                    btIngresar.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Verifique sus datos!");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Hubo un error, intente nuevamente.", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

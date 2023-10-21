@@ -78,6 +78,7 @@
     <Compile Include="CitaRepository.cs" />
     <Compile Include="ABSrepository.cs" />
     <Compile Include="Interfaz.cs" />
+    <Compile Include="LoginRepository.cs" />
     <Compile Include="Response.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

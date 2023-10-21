@@ -77,7 +77,7 @@ namespace GUIPrinc
         {
             try
             {
-                TextWriter RegistrarUser = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\" + txtUserPaCC.Text + ".txt", true);
+                TextWriter RegistrarUser = new StreamWriter(txtUserPaCC.Text + ".txt", true);
                 RegistrarUser.WriteLine(txtPassPaCC.Text);
                 RegistrarUser.Close();
 

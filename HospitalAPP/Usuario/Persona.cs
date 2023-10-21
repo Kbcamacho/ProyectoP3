@@ -19,15 +19,20 @@ namespace HospitalAPP
         public String Direccion { get; set; }
         public String CorreoElectronico { get; set; }
         public String Sexo { get; set; }
+        public String Usuario { get; set; }
+        public String Password {  get; set; }
 
-        public Persona(String nombre, String cedula, String telefono, String direccion, String correoElectronico, String sexo)
+
+        public Persona(String nombre, String cedula, String telefono, String direccion, String correoElectronico, String sexo, string usuario, string password)
         {
-            nombre = Nombre;
-            cedula = Cedula;
-            telefono = Telefono;
-            direccion = Direccion;
-            correoElectronico = CorreoElectronico;
-            sexo = Sexo;
+            Nombre = nombre;
+            Cedula = cedula;
+            Telefono = telefono;
+            Direccion = direccion;
+            CorreoElectronico = correoElectronico;
+            Sexo = sexo;
+            Usuario = usuario;
+            Password = password;
         }
     }
 
