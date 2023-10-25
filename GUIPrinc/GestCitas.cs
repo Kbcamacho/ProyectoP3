@@ -34,8 +34,6 @@ namespace GUIPrinc
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            Form btVolver = new Principal();
-            btVolver.Show();
             this.Close();
         }
 
@@ -48,6 +46,18 @@ namespace GUIPrinc
         {
             Form btProgCita = new ProgramCita();
             btProgCita.Show();
+            this.Hide();
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVolverCC_Click(object sender, EventArgs e)
+        {
+            Form btantLogin = new Login();
+            btantLogin.Show();
             this.Hide();
         }
     }

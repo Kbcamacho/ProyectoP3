@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgramCita));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnLimpiarPC = new System.Windows.Forms.Button();
             this.cmbTipoCita = new System.Windows.Forms.ComboBox();
@@ -98,6 +99,7 @@
             // 
             // cmbTipoCita
             // 
+            this.cmbTipoCita.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoCita.FormattingEnabled = true;
             this.cmbTipoCita.Items.AddRange(new object[] {
             "Acupuntura",
@@ -196,6 +198,7 @@
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(272, 22);
             this.txtDireccion.TabIndex = 12;
+            this.txtDireccion.TextChanged += new System.EventHandler(this.txtDireccion_TextChanged);
             // 
             // txtNumCel
             // 
@@ -203,6 +206,8 @@
             this.txtNumCel.Name = "txtNumCel";
             this.txtNumCel.Size = new System.Drawing.Size(272, 22);
             this.txtNumCel.TabIndex = 11;
+            this.txtNumCel.TextChanged += new System.EventHandler(this.txtNumCel_TextChanged);
+            this.txtNumCel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNumCel_KeyPress);
             // 
             // label7
             // 
@@ -215,6 +220,7 @@
             // 
             // cmbGenero
             // 
+            this.cmbGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbGenero.FormattingEnabled = true;
             this.cmbGenero.Items.AddRange(new object[] {
             "Hombre",
@@ -258,6 +264,8 @@
             this.txtIdent.Name = "txtIdent";
             this.txtIdent.Size = new System.Drawing.Size(272, 22);
             this.txtIdent.TabIndex = 5;
+            this.txtIdent.TextChanged += new System.EventHandler(this.txtIdent_TextChanged);
+            this.txtIdent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtIdent_KeyPress);
             // 
             // label4
             // 
@@ -270,6 +278,7 @@
             // 
             // cmbTipoIdent
             // 
+            this.cmbTipoIdent.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipoIdent.FormattingEnabled = true;
             this.cmbTipoIdent.Items.AddRange(new object[] {
             "Cedula de Ciudadanía",
@@ -298,6 +307,7 @@
             this.txtNombre.Size = new System.Drawing.Size(272, 22);
             this.txtNombre.TabIndex = 1;
             this.txtNombre.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             // 
             // label2
             // 
@@ -330,6 +340,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "ProgramCita";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

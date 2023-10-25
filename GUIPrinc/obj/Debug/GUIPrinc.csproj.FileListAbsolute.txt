@@ -140,12 +140,9 @@ C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\bin\Debug\Microsoft.Bcl.AsyncInter
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\bin\Debug\System.Buffers.xml
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.csproj.AssemblyReference.cache
-C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.csproj.SuggestedBindingRedirects.cache
-C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.exe.config
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.GestCitas.resources
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.Login.resources
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.LoginRegistrar.resources
-C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.Principal.resources
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.ProgramCita.resources
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.Properties.Resources.resources
 C:\Users\User\OneDrive\Escritorio\P3\GUIPrinc\obj\Debug\GUIPrinc.csproj.GenerateResource.cache

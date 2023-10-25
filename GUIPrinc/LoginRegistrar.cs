@@ -37,34 +37,6 @@ namespace GUIPrinc
 
         private void btnCrearDocCC_Click(object sender, EventArgs e)
         {
-            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\UsuariosDoc.txt", true);
-            try
-            {
-                escribir.WriteLine("Usuario: " + txtUserCC.Text);
-                escribir.WriteLine("Password: " + txtPassCC.Text);
-                escribir.WriteLine("Identificación: " + txtIdenCC.Text);
-                escribir.WriteLine("Numero Celular: " + txtNumCC.Text);
-                escribir.WriteLine("Correo: " + txtCorreoCC.Text);
-                escribir.WriteLine("Edad: " + txtEdadCC.Text);
-                escribir.WriteLine("Especialidad: " + cmbEspeCC.Text);
-                escribir.WriteLine("\n");
-
-                MessageBox.Show("Usuario Creado");
-
-                txtUserCC.Clear();
-                txtPassCC.Clear();
-                txtIdenCC.Clear();
-                txtNumCC.Clear();
-                txtCorreoCC.Clear();
-                txtEdadCC.Clear();
-                cmbEspeCC.Items.Clear();
-
-            }
-            catch
-            {
-                MessageBox.Show("ERROR");
-            }
-            escribir.Close();
 
         }
 
@@ -75,20 +47,36 @@ namespace GUIPrinc
 
         private void btnCrearPacCC_Click(object sender, EventArgs e)
         {
-            try
+
+            if (String.IsNullOrWhiteSpace(txtUserPaCC.Text) || String.IsNullOrWhiteSpace(txtPassPaCC.Text)
+                || String.IsNullOrWhiteSpace(txtNombrePaCC.Text) || String.IsNullOrWhiteSpace(txtIdenPaCC.Text)
+                || String.IsNullOrWhiteSpace(txtNumPaCC.Text) || String.IsNullOrWhiteSpace(txtEdadPaCC.Text)
+                || String.IsNullOrWhiteSpace(txtCorreoPaCC.Text) || cmbGeneroPaCC.SelectedIndex == -1)
             {
-                TextWriter RegistrarUser = new StreamWriter(txtUserPaCC.Text + ".txt", true);
-                RegistrarUser.WriteLine(txtPassPaCC.Text);
-                RegistrarUser.Close();
-
-                MessageBox.Show("Usuario Registrado");
-
+                MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch
+            else
             {
-                MessageBox.Show("No se pudo guardar");
-            }
+                try
+                {
+                    TextWriter RegistrarUser = new StreamWriter(txtUserPaCC.Text + ".txt", true);
+                    RegistrarUser.WriteLine(txtPassPaCC.Text);
+                    RegistrarUser.WriteLine(txtNombrePaCC.Text);
+                    RegistrarUser.WriteLine(txtIdenPaCC.Text);
+                    RegistrarUser.WriteLine(txtNumPaCC.Text);
+                    RegistrarUser.WriteLine(txtEdadPaCC.Text);
+                    RegistrarUser.WriteLine(cmbGeneroPaCC.Text);
+                    RegistrarUser.WriteLine(txtCorreoPaCC.Text);
+                    RegistrarUser.Close();
 
+                    MessageBox.Show("Usuario Registrado");
+
+                }
+                catch
+                {
+                    MessageBox.Show("No se pudo guardar");
+                }
+            }
         }
 
         private void txtPassPaCC_TextChanged(object sender, EventArgs e)
@@ -98,24 +86,79 @@ namespace GUIPrinc
 
         private void btnLimpiarCD_Click(object sender, EventArgs e)
         {
-            txtUserCC.Clear();
-            txtPassCC.Clear();
-            txtIdenCC.Clear();
-            txtNumCC.Clear();
-            txtCorreoCC.Clear();
-            txtEdadCC.Clear();
-            cmbEspeCC.Items.Clear();
         }
 
         private void btnLimpiarCP_Click(object sender, EventArgs e)
         {
             txtUserPaCC.Clear();
             txtPassPaCC.Clear();
+            txtNombrePaCC.Clear();
             txtIdenPaCC.Clear();
             txtNumPaCC.Clear();
             txtCorreoPaCC.Clear();
             txtEdadPaCC.Clear();
             cmbGeneroPaCC.Items.Clear();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtUserPaCC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ' ')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtPassPaCC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ' ')
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNombrePaCC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Space && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtIdenPaCC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNumPaCC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtEdadPaCC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCorreoPaCC_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) || char.IsWhiteSpace(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

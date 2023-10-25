@@ -49,38 +49,41 @@ namespace GUIPrinc
 
         private void btnProgramarCita_Click(object sender, EventArgs e)
         {
-            //Cita cita = new();
-            //cita.IdCita = 10000.ToString();
-            //C:\Users\User\OneDrive\Escritorio\P3
 
-            StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\ArchivosCitas.txt", true);
-            try
+            if (String.IsNullOrWhiteSpace(txtNombre.Text) || String.IsNullOrWhiteSpace(txtIdent.Text) || String.IsNullOrWhiteSpace(txtNumCel.Text)
+                || String.IsNullOrWhiteSpace(txtDireccion.Text) || cmbTipoIdent.SelectedIndex == -1 || cmbGenero.SelectedIndex == -1
+                || cmbTipoCita.SelectedIndex == -1)
             {
-                escribir.WriteLine("Nom. Paciente: " + txtNombre.Text);
-                escribir.WriteLine("Tipo Ident: " + cmbTipoIdent.Text);
-                escribir.WriteLine("Identificación: " + txtIdent.Text);
-                escribir.WriteLine("Genero: " + cmbGenero.Text);
-                escribir.WriteLine("Celular: " + txtNumCel.Text);
-                escribir.WriteLine("Dirección: " + txtDireccion.Text);
-                escribir.WriteLine("Tipo de Cita: " + cmbTipoCita.Text);
-                escribir.WriteLine("\n");
+                MessageBox.Show("Por favor, complete todos los campos.","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch
+            else
             {
-                MessageBox.Show("ERROR");
+                StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\ArchivosCitas.txt", true);
+                try
+                {
+                    escribir.WriteLine("Nom. Paciente: " + txtNombre.Text);
+                    escribir.WriteLine("Tipo Ident: " + cmbTipoIdent.Text);
+                    escribir.WriteLine("Identificación: " + txtIdent.Text);
+                    escribir.WriteLine("Genero: " + cmbGenero.Text);
+                    escribir.WriteLine("Celular: " + txtNumCel.Text);
+                    escribir.WriteLine("Dirección: " + txtDireccion.Text);
+                    escribir.WriteLine("Tipo de Cita: " + cmbTipoCita.Text);
+                    escribir.WriteLine("\n");
+                }
+                catch
+                {
+                    MessageBox.Show("ERROR");
+                }
+                escribir.Close();
+
+                txtNombre.Clear();
+                cmbTipoIdent.Items.Clear();
+                txtIdent.Clear();
+                cmbGenero.Items.Clear();
+                txtNumCel.Clear();
+                txtDireccion.Clear();
+                cmbTipoCita.Items.Clear();
             }
-            escribir.Close();
-
-            txtNombre.Clear();
-            cmbTipoIdent.Items.Clear();
-            txtIdent.Clear();
-            cmbGenero.Items.Clear();
-            txtNumCel.Clear();
-            txtDireccion.Clear();
-            cmbTipoCita.Items.Clear();
-
-            
-
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -97,6 +100,45 @@ namespace GUIPrinc
             txtNumCel.Clear();
             txtDireccion.Clear();
             cmbTipoCita.Items.Clear();
+
+        }
+
+        private void txtNombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != (char)Keys.Space && e.KeyChar != (char)Keys.Back) 
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtIdent_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtIdent_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtNumCel_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != (char)Keys.Back)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtDireccion_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNumCel_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

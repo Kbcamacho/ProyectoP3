@@ -42,19 +42,18 @@ namespace GUIPrinc
 
                 if (Inicio.ReadLine() == txtPassPaCC.Text)
                 {
-                    MessageBox.Show("Se Inicio Sesion", "¡Correcto!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Form btIngresar = new Principal();
+                    Form btIngresar = new GestCitas();
                     btIngresar.Show();
                     this.Hide();
                 }
                 else
                 {
-                    MessageBox.Show("Verifique sus datos!");
+                    MessageBox.Show("Usuario y/o Contraseña incorrectos!", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch
             {
-                MessageBox.Show("Hubo un error, intente nuevamente.", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Usuario y/o Contraseña incorrectos.", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
