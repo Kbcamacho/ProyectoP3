@@ -60,5 +60,10 @@ namespace GUIPrinc
             btantLogin.Show();
             this.Hide();
         }
+
+        private void GestCitas_Load(object sender, EventArgs e)
+        {
+         
+        }
     }
 }

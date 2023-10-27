@@ -50,6 +50,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cmbTipoIdenPaCC = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -77,6 +79,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbTipoIdenPaCC);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtNombrePaCC);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.btnLimpiarCP);
@@ -99,7 +103,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.LightCyan;
             this.groupBox1.Location = new System.Drawing.Point(12, 55);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(685, 364);
+            this.groupBox1.Size = new System.Drawing.Size(685, 387);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cuenta para Paciente";
@@ -129,7 +133,7 @@
             this.btnLimpiarCP.BackColor = System.Drawing.Color.LightBlue;
             this.btnLimpiarCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiarCP.ForeColor = System.Drawing.Color.Black;
-            this.btnLimpiarCP.Location = new System.Drawing.Point(470, 307);
+            this.btnLimpiarCP.Location = new System.Drawing.Point(462, 318);
             this.btnLimpiarCP.Name = "btnLimpiarCP";
             this.btnLimpiarCP.Size = new System.Drawing.Size(94, 36);
             this.btnLimpiarCP.TabIndex = 28;
@@ -168,7 +172,7 @@
             this.btnCrearPacCC.BackColor = System.Drawing.Color.LightBlue;
             this.btnCrearPacCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearPacCC.ForeColor = System.Drawing.Color.Black;
-            this.btnCrearPacCC.Location = new System.Drawing.Point(586, 307);
+            this.btnCrearPacCC.Location = new System.Drawing.Point(586, 318);
             this.btnCrearPacCC.Name = "btnCrearPacCC";
             this.btnCrearPacCC.Size = new System.Drawing.Size(75, 36);
             this.btnCrearPacCC.TabIndex = 12;
@@ -206,7 +210,7 @@
             // txtIdenPaCC
             // 
             this.txtIdenPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdenPaCC.Location = new System.Drawing.Point(21, 259);
+            this.txtIdenPaCC.Location = new System.Drawing.Point(21, 323);
             this.txtIdenPaCC.Name = "txtIdenPaCC";
             this.txtIdenPaCC.Size = new System.Drawing.Size(297, 27);
             this.txtIdenPaCC.TabIndex = 8;
@@ -236,7 +240,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 236);
+            this.label6.Location = new System.Drawing.Point(17, 300);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(112, 20);
             this.label6.TabIndex = 5;
@@ -294,12 +298,38 @@
             this.label1.Text = "Usuario:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // cmbTipoIdenPaCC
+            // 
+            this.cmbTipoIdenPaCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoIdenPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoIdenPaCC.FormattingEnabled = true;
+            this.cmbTipoIdenPaCC.Items.AddRange(new object[] {
+            "Cedula de Ciudadanía",
+            "Cedula de Extranjeria",
+            "Pasaporte",
+            "Tarjeta de Identidad",
+            "Registro Civil"});
+            this.cmbTipoIdenPaCC.Location = new System.Drawing.Point(21, 262);
+            this.cmbTipoIdenPaCC.Name = "cmbTipoIdenPaCC";
+            this.cmbTipoIdenPaCC.Size = new System.Drawing.Size(297, 24);
+            this.cmbTipoIdenPaCC.TabIndex = 32;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(17, 239);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(172, 20);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Tipo de Identificación:";
+            // 
             // LoginRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(708, 430);
+            this.ClientSize = new System.Drawing.Size(708, 454);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -338,5 +368,7 @@
         private System.Windows.Forms.Button btnLimpiarCP;
         private System.Windows.Forms.TextBox txtNombrePaCC;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmbTipoIdenPaCC;
+        private System.Windows.Forms.Label label8;
     }
 }

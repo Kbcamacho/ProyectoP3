@@ -58,31 +58,38 @@ namespace GUIPrinc
             }
             else
             {
-                StreamWriter escribir = new StreamWriter(@"C:\Users\User\OneDrive\Escritorio\P3\ArchivosCitas.txt", true);
                 try
                 {
-                    escribir.WriteLine("Nom. Paciente: " + txtNombre.Text);
-                    escribir.WriteLine("Tipo Ident: " + cmbTipoIdent.Text);
-                    escribir.WriteLine("Identificación: " + txtIdent.Text);
-                    escribir.WriteLine("Genero: " + cmbGenero.Text);
-                    escribir.WriteLine("Celular: " + txtNumCel.Text);
-                    escribir.WriteLine("Dirección: " + txtDireccion.Text);
-                    escribir.WriteLine("Tipo de Cita: " + cmbTipoCita.Text);
-                    escribir.WriteLine("\n");
+
+                    TextWriter RegistrarUser = new StreamWriter("CITAS.txt", true);
+                    RegistrarUser.WriteLine("Nombre: " + txtNombre.Text);
+                    RegistrarUser.WriteLine("Tipo Ident: " + cmbTipoIdent.Text);
+                    RegistrarUser.WriteLine("Identificación: " + txtIdent.Text);
+                    RegistrarUser.WriteLine("Genero: " + cmbGenero.Text);
+                    RegistrarUser.WriteLine("Celular: " + txtNumCel.Text);
+                    RegistrarUser.WriteLine("Dirección: " + txtDireccion.Text);
+                    RegistrarUser.WriteLine("Tipo de Cita: " + cmbTipoCita.Text);
+                    RegistrarUser.WriteLine("\n");
+                    RegistrarUser.Close();
+
+                    MessageBox.Show("La cita fue agendadad con exito", "Verificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtNombre.Clear();
+                    cmbGenero.SelectedIndex = -1;
+                    txtIdent.Clear();
+                    cmbGenero.SelectedIndex = -1;
+                    txtNumCel.Clear();
+                    txtDireccion.Clear();
+                    cmbTipoCita.SelectedIndex = -1;
                 }
                 catch
                 {
-                    MessageBox.Show("ERROR");
+                    MessageBox.Show("No se pudo agendar la cita", "ERROR", MessageBoxButtons.OKCancel, MessageBoxIcon.Error);
                 }
-                escribir.Close();
 
-                txtNombre.Clear();
-                cmbTipoIdent.Items.Clear();
-                txtIdent.Clear();
-                cmbGenero.Items.Clear();
-                txtNumCel.Clear();
-                txtDireccion.Clear();
-                cmbTipoCita.Items.Clear();
+                Form btProgram = new GestCitas();
+                btProgram.Show();
+                this.Hide();
             }
         }
 
@@ -94,12 +101,12 @@ namespace GUIPrinc
         private void btnLimpiarPC_Click(object sender, EventArgs e)
         {
             txtNombre.Clear();
-            cmbTipoIdent.Items.Clear();
+            cmbTipoIdent.SelectedIndex = -1;
             txtIdent.Clear();
-            cmbGenero.Items.Clear();
+            cmbGenero.SelectedIndex = -1;
             txtNumCel.Clear();
             txtDireccion.Clear();
-            cmbTipoCita.Items.Clear();
+            cmbTipoCita.SelectedIndex =1;
 
         }
 

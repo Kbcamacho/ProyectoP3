@@ -154,6 +154,7 @@
             this.Name = "GestCitas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Citas";
+            this.Load += new System.EventHandler(this.GestCitas_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);

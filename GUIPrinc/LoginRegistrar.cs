@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Drawing.Text;
 
 namespace GUIPrinc
 {
@@ -46,12 +47,12 @@ namespace GUIPrinc
         }
 
         private void btnCrearPacCC_Click(object sender, EventArgs e)
-        {
-
+        {         
             if (String.IsNullOrWhiteSpace(txtUserPaCC.Text) || String.IsNullOrWhiteSpace(txtPassPaCC.Text)
                 || String.IsNullOrWhiteSpace(txtNombrePaCC.Text) || String.IsNullOrWhiteSpace(txtIdenPaCC.Text)
                 || String.IsNullOrWhiteSpace(txtNumPaCC.Text) || String.IsNullOrWhiteSpace(txtEdadPaCC.Text)
-                || String.IsNullOrWhiteSpace(txtCorreoPaCC.Text) || cmbGeneroPaCC.SelectedIndex == -1)
+                || String.IsNullOrWhiteSpace(txtCorreoPaCC.Text) || cmbGeneroPaCC.SelectedIndex == -1
+                || cmbTipoIdenPaCC.SelectedIndex == -1 )
             {
                 MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -59,6 +60,7 @@ namespace GUIPrinc
             {
                 try
                 {
+                   
                     TextWriter RegistrarUser = new StreamWriter(txtUserPaCC.Text + ".txt", true);
                     RegistrarUser.WriteLine(txtPassPaCC.Text);
                     RegistrarUser.WriteLine(txtNombrePaCC.Text);
@@ -69,12 +71,21 @@ namespace GUIPrinc
                     RegistrarUser.WriteLine(txtCorreoPaCC.Text);
                     RegistrarUser.Close();
 
-                    MessageBox.Show("Usuario Registrado");
+                    MessageBox.Show("El Usuario fue registrado con Exito", "Verificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                    txtUserPaCC.Clear();
+                    txtPassPaCC.Clear();
+                    txtNombrePaCC.Clear();
+                    txtIdenPaCC.Clear();
+                    txtNumPaCC.Clear();
+                    txtCorreoPaCC.Clear();
+                    txtEdadPaCC.Clear();
+                    cmbGeneroPaCC.SelectedIndex = -1;
+                    cmbTipoIdenPaCC.SelectedIndex = -1;
                 }
                 catch
                 {
-                    MessageBox.Show("No se pudo guardar");
+                    MessageBox.Show("No se pudo registrar al usuario", "ERROR", MessageBoxButtons.OKCancel);
                 }
             }
         }
@@ -97,7 +108,8 @@ namespace GUIPrinc
             txtNumPaCC.Clear();
             txtCorreoPaCC.Clear();
             txtEdadPaCC.Clear();
-            cmbGeneroPaCC.Items.Clear();
+            cmbGeneroPaCC.SelectedIndex = -1;
+            cmbTipoIdenPaCC.SelectedIndex = -1;
         }
 
         private void label1_Click(object sender, EventArgs e)
