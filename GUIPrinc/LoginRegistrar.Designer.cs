@@ -32,13 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVolverCC = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbTipoIdenPaCC = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txtNombrePaCC = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnLimpiarCP = new System.Windows.Forms.Button();
             this.cmbGeneroPaCC = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.btnCrearPacCC = new System.Windows.Forms.Button();
-            this.txtEdadPaCC = new System.Windows.Forms.TextBox();
             this.txtCorreoPaCC = new System.Windows.Forms.TextBox();
             this.txtNumPaCC = new System.Windows.Forms.TextBox();
             this.txtIdenPaCC = new System.Windows.Forms.TextBox();
@@ -50,8 +51,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cmbTipoIdenPaCC = new System.Windows.Forms.ComboBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.dtFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -79,6 +79,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dtFechaNacimiento);
             this.groupBox1.Controls.Add(this.cmbTipoIdenPaCC);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.txtNombrePaCC);
@@ -87,7 +88,6 @@
             this.groupBox1.Controls.Add(this.cmbGeneroPaCC);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.btnCrearPacCC);
-            this.groupBox1.Controls.Add(this.txtEdadPaCC);
             this.groupBox1.Controls.Add(this.txtCorreoPaCC);
             this.groupBox1.Controls.Add(this.txtNumPaCC);
             this.groupBox1.Controls.Add(this.txtIdenPaCC);
@@ -108,6 +108,32 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cuenta para Paciente";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // cmbTipoIdenPaCC
+            // 
+            this.cmbTipoIdenPaCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoIdenPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoIdenPaCC.FormattingEnabled = true;
+            this.cmbTipoIdenPaCC.Items.AddRange(new object[] {
+            "Cedula de Ciudadanía",
+            "Cedula de Extranjeria",
+            "Pasaporte",
+            "Tarjeta de Identidad",
+            "Registro Civil"});
+            this.cmbTipoIdenPaCC.Location = new System.Drawing.Point(21, 262);
+            this.cmbTipoIdenPaCC.Name = "cmbTipoIdenPaCC";
+            this.cmbTipoIdenPaCC.Size = new System.Drawing.Size(297, 24);
+            this.cmbTipoIdenPaCC.TabIndex = 32;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(17, 239);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(172, 20);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Tipo de Identificación:";
             // 
             // txtNombrePaCC
             // 
@@ -131,7 +157,7 @@
             // btnLimpiarCP
             // 
             this.btnLimpiarCP.BackColor = System.Drawing.Color.LightBlue;
-            this.btnLimpiarCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarCP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiarCP.ForeColor = System.Drawing.Color.Black;
             this.btnLimpiarCP.Location = new System.Drawing.Point(462, 318);
             this.btnLimpiarCP.Name = "btnLimpiarCP";
@@ -148,10 +174,7 @@
             this.cmbGeneroPaCC.FormattingEnabled = true;
             this.cmbGeneroPaCC.Items.AddRange(new object[] {
             "Hombre",
-            "Mujer",
-            "Transexual",
-            "Prefiero no decirlo",
-            "Otro"});
+            "Mujer"});
             this.cmbGeneroPaCC.Location = new System.Drawing.Point(364, 194);
             this.cmbGeneroPaCC.Name = "cmbGeneroPaCC";
             this.cmbGeneroPaCC.Size = new System.Drawing.Size(297, 24);
@@ -163,14 +186,14 @@
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(360, 171);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 20);
+            this.label14.Size = new System.Drawing.Size(51, 20);
             this.label14.TabIndex = 13;
-            this.label14.Text = "Genero:";
+            this.label14.Text = "Sexo:";
             // 
             // btnCrearPacCC
             // 
             this.btnCrearPacCC.BackColor = System.Drawing.Color.LightBlue;
-            this.btnCrearPacCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearPacCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrearPacCC.ForeColor = System.Drawing.Color.Black;
             this.btnCrearPacCC.Location = new System.Drawing.Point(586, 318);
             this.btnCrearPacCC.Name = "btnCrearPacCC";
@@ -179,15 +202,6 @@
             this.btnCrearPacCC.Text = "Crear";
             this.btnCrearPacCC.UseVisualStyleBackColor = false;
             this.btnCrearPacCC.Click += new System.EventHandler(this.btnCrearPacCC_Click);
-            // 
-            // txtEdadPaCC
-            // 
-            this.txtEdadPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEdadPaCC.Location = new System.Drawing.Point(364, 129);
-            this.txtEdadPaCC.Name = "txtEdadPaCC";
-            this.txtEdadPaCC.Size = new System.Drawing.Size(297, 27);
-            this.txtEdadPaCC.TabIndex = 11;
-            this.txtEdadPaCC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEdadPaCC_KeyPress);
             // 
             // txtCorreoPaCC
             // 
@@ -253,9 +267,10 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(360, 106);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
+            this.label5.Size = new System.Drawing.Size(172, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Edad:";
+            this.label5.Text = "Fecha de Nacimiento:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -298,31 +313,15 @@
             this.label1.Text = "Usuario:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // cmbTipoIdenPaCC
+            // dtFechaNacimiento
             // 
-            this.cmbTipoIdenPaCC.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipoIdenPaCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTipoIdenPaCC.FormattingEnabled = true;
-            this.cmbTipoIdenPaCC.Items.AddRange(new object[] {
-            "Cedula de Ciudadanía",
-            "Cedula de Extranjeria",
-            "Pasaporte",
-            "Tarjeta de Identidad",
-            "Registro Civil"});
-            this.cmbTipoIdenPaCC.Location = new System.Drawing.Point(21, 262);
-            this.cmbTipoIdenPaCC.Name = "cmbTipoIdenPaCC";
-            this.cmbTipoIdenPaCC.Size = new System.Drawing.Size(297, 24);
-            this.cmbTipoIdenPaCC.TabIndex = 32;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 239);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(172, 20);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "Tipo de Identificación:";
+            this.dtFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFechaNacimiento.Location = new System.Drawing.Point(364, 130);
+            this.dtFechaNacimiento.Name = "dtFechaNacimiento";
+            this.dtFechaNacimiento.Size = new System.Drawing.Size(297, 22);
+            this.dtFechaNacimiento.TabIndex = 33;
+            this.dtFechaNacimiento.ValueChanged += new System.EventHandler(this.dtFechaNacimiento_ValueChanged);
             // 
             // LoginRegistrar
             // 
@@ -355,7 +354,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtEdadPaCC;
         private System.Windows.Forms.TextBox txtCorreoPaCC;
         private System.Windows.Forms.TextBox txtNumPaCC;
         private System.Windows.Forms.TextBox txtIdenPaCC;
@@ -370,5 +368,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ComboBox cmbTipoIdenPaCC;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dtFechaNacimiento;
     }
 }

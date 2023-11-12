@@ -65,7 +65,7 @@
             // btnCancelarCita
             // 
             this.btnCancelarCita.BackColor = System.Drawing.Color.LightCyan;
-            this.btnCancelarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelarCita.ForeColor = System.Drawing.Color.Black;
             this.btnCancelarCita.Location = new System.Drawing.Point(267, 139);
             this.btnCancelarCita.Name = "btnCancelarCita";
@@ -77,7 +77,7 @@
             // btnConsulCita
             // 
             this.btnConsulCita.BackColor = System.Drawing.Color.LightCyan;
-            this.btnConsulCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConsulCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConsulCita.ForeColor = System.Drawing.Color.Black;
             this.btnConsulCita.Location = new System.Drawing.Point(267, 45);
             this.btnConsulCita.Name = "btnConsulCita";
@@ -89,7 +89,7 @@
             // btnSacarCita
             // 
             this.btnSacarCita.BackColor = System.Drawing.Color.LightCyan;
-            this.btnSacarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSacarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSacarCita.ForeColor = System.Drawing.Color.Black;
             this.btnSacarCita.Location = new System.Drawing.Point(20, 45);
             this.btnSacarCita.Name = "btnSacarCita";
@@ -102,7 +102,7 @@
             // btnActuCita
             // 
             this.btnActuCita.BackColor = System.Drawing.Color.LightCyan;
-            this.btnActuCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnActuCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActuCita.ForeColor = System.Drawing.Color.Black;
             this.btnActuCita.Location = new System.Drawing.Point(18, 139);
             this.btnActuCita.Name = "btnActuCita";

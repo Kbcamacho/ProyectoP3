@@ -1,9 +1,11 @@
 Nombre: Daniel
 Tipo Ident: Cedula de Ciudadanía
 Identificación: 1067592619
-Genero: Hombre
+Fecha de Nacimiento: 2/08/2004
+Sexo: Hombre
 Celular: 3175697927
-Dirección: Mnz 43 Casa 1 Garupal 2
-Tipo de Cita: Urologia
+Dirección: Manzana 43 Casa 1 Garupal 2
+Tipo de Cita: Cirugia General
+Fecha de Cita:23/11/2023
 
 

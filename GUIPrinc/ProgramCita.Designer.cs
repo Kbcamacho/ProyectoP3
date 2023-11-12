@@ -52,12 +52,18 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.btnPDF = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightBlue;
+            this.panel1.Controls.Add(this.btnPDF);
+            this.panel1.Controls.Add(this.txtCorreo);
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.btnLimpiarPC);
             this.panel1.Controls.Add(this.cmbTipoCita);
             this.panel1.Controls.Add(this.label9);
@@ -81,17 +87,17 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(12, 52);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(619, 294);
+            this.panel1.Size = new System.Drawing.Size(619, 362);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnLimpiarPC
             // 
             this.btnLimpiarPC.BackColor = System.Drawing.Color.Wheat;
-            this.btnLimpiarPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpiarPC.Location = new System.Drawing.Point(434, 240);
+            this.btnLimpiarPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpiarPC.Location = new System.Drawing.Point(122, 308);
             this.btnLimpiarPC.Name = "btnLimpiarPC";
-            this.btnLimpiarPC.Size = new System.Drawing.Size(84, 32);
+            this.btnLimpiarPC.Size = new System.Drawing.Size(84, 33);
             this.btnLimpiarPC.TabIndex = 22;
             this.btnLimpiarPC.Text = "Limpiar";
             this.btnLimpiarPC.UseVisualStyleBackColor = false;
@@ -145,9 +151,9 @@
             // btnVolverPC
             // 
             this.btnVolverPC.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnVolverPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVolverPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolverPC.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnVolverPC.Location = new System.Drawing.Point(524, 240);
+            this.btnVolverPC.Location = new System.Drawing.Point(212, 308);
             this.btnVolverPC.Name = "btnVolverPC";
             this.btnVolverPC.Size = new System.Drawing.Size(76, 33);
             this.btnVolverPC.TabIndex = 19;
@@ -158,8 +164,8 @@
             // btnProgramarCita
             // 
             this.btnProgramarCita.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnProgramarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProgramarCita.Location = new System.Drawing.Point(328, 240);
+            this.btnProgramarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProgramarCita.Location = new System.Drawing.Point(17, 308);
             this.btnProgramarCita.Name = "btnProgramarCita";
             this.btnProgramarCita.Size = new System.Drawing.Size(100, 33);
             this.btnProgramarCita.TabIndex = 18;
@@ -169,6 +175,7 @@
             // 
             // FechaCita
             // 
+            this.FechaCita.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FechaCita.Location = new System.Drawing.Point(328, 194);
             this.FechaCita.Name = "FechaCita";
             this.FechaCita.Size = new System.Drawing.Size(272, 22);
@@ -224,10 +231,7 @@
             this.cmbGenero.FormattingEnabled = true;
             this.cmbGenero.Items.AddRange(new object[] {
             "Hombre",
-            "Mujer",
-            "No binario",
-            "Transexual",
-            "Otro"});
+            "Mujer"});
             this.cmbGenero.Location = new System.Drawing.Point(16, 249);
             this.cmbGenero.Name = "cmbGenero";
             this.cmbGenero.Size = new System.Drawing.Size(272, 24);
@@ -238,12 +242,13 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(13, 230);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 16);
+            this.label6.Size = new System.Drawing.Size(41, 16);
             this.label6.TabIndex = 8;
-            this.label6.Text = "Genero:";
+            this.label6.Text = "Sexo:";
             // 
             // FechaNaci
             // 
+            this.FechaNaci.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.FechaNaci.Location = new System.Drawing.Point(16, 194);
             this.FechaNaci.Name = "FechaNaci";
             this.FechaNaci.Size = new System.Drawing.Size(272, 22);
@@ -314,9 +319,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(13, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 16);
+            this.label2.Size = new System.Drawing.Size(59, 16);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Primer Nombre:";
+            this.label2.Text = "Nombre:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
@@ -331,12 +336,43 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Programar una Cita.";
             // 
+            // txtCorreo
+            // 
+            this.txtCorreo.Location = new System.Drawing.Point(328, 250);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(272, 22);
+            this.txtCorreo.TabIndex = 24;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(325, 230);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(51, 16);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Correo:";
+            // 
+            // btnPDF
+            // 
+            this.btnPDF.BackColor = System.Drawing.Color.Azure;
+            this.btnPDF.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPDF.Image = global::GUIPrinc.Properties.Resources.pdf;
+            this.btnPDF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPDF.Location = new System.Drawing.Point(457, 290);
+            this.btnPDF.Name = "btnPDF";
+            this.btnPDF.Size = new System.Drawing.Size(143, 51);
+            this.btnPDF.TabIndex = 25;
+            this.btnPDF.Text = "Generar PDF";
+            this.btnPDF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnPDF.UseVisualStyleBackColor = false;
+            this.btnPDF.Click += new System.EventHandler(this.btnPDF_Click);
+            // 
             // ProgramCita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(643, 357);
+            this.ClientSize = new System.Drawing.Size(643, 426);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -378,5 +414,8 @@
         private System.Windows.Forms.ComboBox cmbTipoCita;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnLimpiarPC;
+        private System.Windows.Forms.TextBox txtCorreo;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btnPDF;
     }
 }

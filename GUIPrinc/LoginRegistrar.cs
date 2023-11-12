@@ -47,45 +47,54 @@ namespace GUIPrinc
         }
 
         private void btnCrearPacCC_Click(object sender, EventArgs e)
-        {         
+        {
             if (String.IsNullOrWhiteSpace(txtUserPaCC.Text) || String.IsNullOrWhiteSpace(txtPassPaCC.Text)
                 || String.IsNullOrWhiteSpace(txtNombrePaCC.Text) || String.IsNullOrWhiteSpace(txtIdenPaCC.Text)
-                || String.IsNullOrWhiteSpace(txtNumPaCC.Text) || String.IsNullOrWhiteSpace(txtEdadPaCC.Text)
-                || String.IsNullOrWhiteSpace(txtCorreoPaCC.Text) || cmbGeneroPaCC.SelectedIndex == -1
-                || cmbTipoIdenPaCC.SelectedIndex == -1 )
+                || String.IsNullOrWhiteSpace(txtNumPaCC.Text) || String.IsNullOrWhiteSpace(txtCorreoPaCC.Text)
+                || String.IsNullOrWhiteSpace(dtFechaNacimiento.Text) || cmbGeneroPaCC.SelectedIndex == -1
+                || cmbTipoIdenPaCC.SelectedIndex == -1)
             {
                 MessageBox.Show("Por favor, complete todos los campos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                try
+                DateTime fechaNacimiento = DateTime.Parse(dtFechaNacimiento.Text);
+                if (fechaNacimiento >= DateTime.Now)
                 {
-                   
-                    TextWriter RegistrarUser = new StreamWriter(txtUserPaCC.Text + ".txt", true);
-                    RegistrarUser.WriteLine(txtPassPaCC.Text);
-                    RegistrarUser.WriteLine(txtNombrePaCC.Text);
-                    RegistrarUser.WriteLine(txtIdenPaCC.Text);
-                    RegistrarUser.WriteLine(txtNumPaCC.Text);
-                    RegistrarUser.WriteLine(txtEdadPaCC.Text);
-                    RegistrarUser.WriteLine(cmbGeneroPaCC.Text);
-                    RegistrarUser.WriteLine(txtCorreoPaCC.Text);
-                    RegistrarUser.Close();
-
-                    MessageBox.Show("El Usuario fue registrado con Exito", "Verificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    txtUserPaCC.Clear();
-                    txtPassPaCC.Clear();
-                    txtNombrePaCC.Clear();
-                    txtIdenPaCC.Clear();
-                    txtNumPaCC.Clear();
-                    txtCorreoPaCC.Clear();
-                    txtEdadPaCC.Clear();
-                    cmbGeneroPaCC.SelectedIndex = -1;
-                    cmbTipoIdenPaCC.SelectedIndex = -1;
+                    MessageBox.Show("Fecha de Nacimiento invalida.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                catch
+                else
                 {
-                    MessageBox.Show("No se pudo registrar al usuario", "ERROR", MessageBoxButtons.OKCancel);
+                    try
+                    {
+
+                        TextWriter RegistrarUser = new StreamWriter(txtUserPaCC.Text + ".txt", true);
+                        RegistrarUser.WriteLine(txtPassPaCC.Text);
+                        RegistrarUser.WriteLine(txtNombrePaCC.Text);
+                        RegistrarUser.WriteLine(txtIdenPaCC.Text);
+                        RegistrarUser.WriteLine(txtNumPaCC.Text);
+                        RegistrarUser.WriteLine(cmbGeneroPaCC.Text);
+                        RegistrarUser.WriteLine(txtCorreoPaCC.Text);
+                        RegistrarUser.WriteLine(dtFechaNacimiento.Text);
+                        RegistrarUser.Close();
+
+                        MessageBox.Show("El Usuario fue registrado con Exito", "Verificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                        txtUserPaCC.Clear();
+                        txtPassPaCC.Clear();
+                        txtNombrePaCC.Clear();
+                        txtIdenPaCC.Clear();
+                        txtNumPaCC.Clear();
+                        txtCorreoPaCC.Clear();
+                        cmbGeneroPaCC.SelectedIndex = -1;
+                        cmbTipoIdenPaCC.SelectedIndex = -1;
+                        dtFechaNacimiento.Value = DateTime.Now;
+
+                    }
+                    catch
+                    {
+                        MessageBox.Show("No se pudo registrar al usuario", "ERROR", MessageBoxButtons.OKCancel);
+                    }
                 }
             }
         }
@@ -107,9 +116,9 @@ namespace GUIPrinc
             txtIdenPaCC.Clear();
             txtNumPaCC.Clear();
             txtCorreoPaCC.Clear();
-            txtEdadPaCC.Clear();
             cmbGeneroPaCC.SelectedIndex = -1;
             cmbTipoIdenPaCC.SelectedIndex = -1;
+            dtFechaNacimiento.Value = DateTime.Now;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -167,10 +176,20 @@ namespace GUIPrinc
 
         private void txtCorreoPaCC_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsDigit(e.KeyChar) || char.IsWhiteSpace(e.KeyChar))
+            if (e.KeyChar == ' ')
             {
                 e.Handled = true;
             }
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtFechaNacimiento_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
