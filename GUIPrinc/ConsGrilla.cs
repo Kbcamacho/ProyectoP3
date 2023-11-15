@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GUIPrinc
 {
-    public partial class ConsGrilla : Form
+    public partial class GrillUsuario : Form
     {
-        public ConsGrilla()
+        public GrillUsuario()
         {
             InitializeComponent();
         }

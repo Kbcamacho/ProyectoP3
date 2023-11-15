@@ -22,9 +22,10 @@ namespace HospitalAPP
         public DateTime FechaNacimiento { get; set; }
         public String Sexo { get; set; }
         public String CorreoElectronico { get; set; }
+        public String Accion {  get; set; }
 
         public Persona(string cedula, string password, string nombre, string apellido, string telefono, DateTime fechaNacimiento,
-            string sexo, string correoElectronico)
+            string sexo, string correoElectronico, string accion)
         {
             Cedula = cedula;
             Password = password;
@@ -34,6 +35,7 @@ namespace HospitalAPP
             FechaNacimiento = fechaNacimiento;
             Sexo = sexo;
             CorreoElectronico = correoElectronico;
+            Accion = accion;
  
         }
     }

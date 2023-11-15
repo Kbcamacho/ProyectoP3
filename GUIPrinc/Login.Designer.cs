@@ -102,7 +102,7 @@
             // 
             this.btnLimpiarIS.BackColor = System.Drawing.Color.Wheat;
             this.btnLimpiarIS.ForeColor = System.Drawing.Color.Black;
-            this.btnLimpiarIS.Location = new System.Drawing.Point(251, 118);
+            this.btnLimpiarIS.Location = new System.Drawing.Point(251, 128);
             this.btnLimpiarIS.Name = "btnLimpiarIS";
             this.btnLimpiarIS.Size = new System.Drawing.Size(96, 38);
             this.btnLimpiarIS.TabIndex = 6;
@@ -114,7 +114,7 @@
             // 
             this.btnIngresarIS.BackColor = System.Drawing.Color.LightBlue;
             this.btnIngresarIS.ForeColor = System.Drawing.Color.Black;
-            this.btnIngresarIS.Location = new System.Drawing.Point(363, 118);
+            this.btnIngresarIS.Location = new System.Drawing.Point(363, 128);
             this.btnIngresarIS.Name = "btnIngresarIS";
             this.btnIngresarIS.Size = new System.Drawing.Size(96, 38);
             this.btnIngresarIS.TabIndex = 4;

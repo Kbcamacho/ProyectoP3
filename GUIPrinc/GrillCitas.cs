@@ -16,5 +16,15 @@ namespace GUIPrinc
         {
             InitializeComponent();
         }
+
+        private void agregarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GrillCitas_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
