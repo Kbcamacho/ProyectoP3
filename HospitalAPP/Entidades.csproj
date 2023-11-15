@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\Antecedentes.cs" />
     <Compile Include="Admin\HistorialMedico.cs" />
     <Compile Include="Usuario\Cita.cs" />
     <Compile Include="Admin\Doctor.cs" />
