@@ -126,3 +126,4 @@ C:\Users\camac\source\repos\Proyecto\Logica\obj\Debug\Logica.csproj.CoreCompileI
 C:\Users\camac\source\repos\Proyecto\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\camac\source\repos\Proyecto\Logica\obj\Debug\Logica.dll
 C:\Users\camac\source\repos\Proyecto\Logica\obj\Debug\Logica.pdb
+C:\Users\camac\source\repos\Proyecto\Logica\bin\Debug\Oracle.ManagedDataAccess.dll

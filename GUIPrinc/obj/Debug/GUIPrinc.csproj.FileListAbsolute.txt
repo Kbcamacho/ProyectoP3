@@ -265,3 +265,6 @@ C:\Users\camac\source\repos\Proyecto\GUIPrinc\obj\Debug\GUIPrinc.csproj.CoreComp
 C:\Users\camac\source\repos\Proyecto\GUIPrinc\obj\Debug\GUIPrinc.csproj.CopyComplete
 C:\Users\camac\source\repos\Proyecto\GUIPrinc\obj\Debug\GUIPrinc.exe
 C:\Users\camac\source\repos\Proyecto\GUIPrinc\obj\Debug\GUIPrinc.pdb
+C:\Users\camac\source\repos\Proyecto\GUIPrinc\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\camac\source\repos\Proyecto\GUIPrinc\obj\Debug\GUIPrinc.csproj.SuggestedBindingRedirects.cache
+C:\Users\camac\source\repos\Proyecto\GUIPrinc\obj\Debug\GUIPrinc.exe.config

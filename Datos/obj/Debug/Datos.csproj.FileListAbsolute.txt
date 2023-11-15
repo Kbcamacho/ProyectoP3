@@ -118,3 +118,4 @@ C:\Users\camac\source\repos\Proyecto\Datos\obj\Debug\Datos.csproj.CoreCompileInp
 C:\Users\camac\source\repos\Proyecto\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\camac\source\repos\Proyecto\Datos\obj\Debug\Datos.dll
 C:\Users\camac\source\repos\Proyecto\Datos\obj\Debug\Datos.pdb
+C:\Users\camac\source\repos\Proyecto\Datos\bin\Debug\Oracle.ManagedDataAccess.dll
