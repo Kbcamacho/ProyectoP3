@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,28 +14,27 @@ namespace HospitalAPP
 
         }
 
-        public String Nombre { get; set; }
         public String Cedula { get; set; }
+        public String Password { get; set; }
+        public String Nombre { get; set; }
+        public String Apellido { get; set; }
         public String Telefono { get; set; }
-        public String Direccion { get; set; }
-        public String CorreoElectronico { get; set; }
+        public DateTime FechaNacimiento { get; set; }
         public String Sexo { get; set; }
-        public String Usuario { get; set; }
-        public String Password {  get; set; }
+        public String CorreoElectronico { get; set; }
+        public String Sangre { get; set; }
 
-
-        public Persona(String nombre, String cedula, String telefono, String direccion, String correoElectronico, String sexo, string usuario, string password)
+        public Persona(string cedula, string password, string nombre, string apellido, string telefono, DateTime fechaNacimiento, string sexo, string correoElectronico, string sangre)
         {
-            Nombre = nombre;
             Cedula = cedula;
-            Telefono = telefono;
-            Direccion = direccion;
-            CorreoElectronico = correoElectronico;
-            Sexo = sexo;
-            Usuario = usuario;
             Password = password;
+            Nombre = nombre;
+            Apellido = apellido;
+            Telefono = telefono;
+            FechaNacimiento = fechaNacimiento;
+            Sexo = sexo;
+            CorreoElectronico = correoElectronico;
+            Sangre = sangre;
         }
     }
-
-    
 }

@@ -70,12 +70,13 @@ namespace GUIPrinc
 
                         TextWriter RegistrarUser = new StreamWriter(txtUserPaCC.Text + ".txt", true);
                         RegistrarUser.WriteLine(txtPassPaCC.Text);
-                        RegistrarUser.WriteLine(txtNombrePaCC.Text);
-                        RegistrarUser.WriteLine(txtIdenPaCC.Text);
-                        RegistrarUser.WriteLine(txtNumPaCC.Text);
-                        RegistrarUser.WriteLine(cmbGeneroPaCC.Text);
-                        RegistrarUser.WriteLine(txtCorreoPaCC.Text);
-                        RegistrarUser.WriteLine(dtFechaNacimiento.Text);
+                        RegistrarUser.WriteLine("Nombre: " + txtNombrePaCC.Text);
+                        RegistrarUser.WriteLine("Tipo de Ident: " + cmbTipoIdenPaCC.Text);
+                        RegistrarUser.WriteLine("Identificación: " + txtIdenPaCC.Text);
+                        RegistrarUser.WriteLine("Celular: " + txtNumPaCC.Text);
+                        RegistrarUser.WriteLine("Sexo: " + cmbGeneroPaCC.Text);
+                        RegistrarUser.WriteLine("Correo: " + txtCorreoPaCC.Text);
+                        RegistrarUser.WriteLine("Fecha de Nacimiento: " + dtFechaNacimiento.Text);
                         RegistrarUser.Close();
 
                         MessageBox.Show("El Usuario fue registrado con Exito", "Verificado", MessageBoxButtons.OK, MessageBoxIcon.Information);

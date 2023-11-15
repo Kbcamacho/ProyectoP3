@@ -89,10 +89,10 @@ namespace GUIPrinc
         {
 
             if (String.IsNullOrWhiteSpace(txtNombre.Text) || String.IsNullOrWhiteSpace(txtIdent.Text) 
-                || String.IsNullOrWhiteSpace(txtNumCel.Text)
-                || String.IsNullOrWhiteSpace(txtDireccion.Text) || cmbTipoIdent.SelectedIndex == -1 
-                || cmbGenero.SelectedIndex == -1 || cmbTipoCita.SelectedIndex == -1
-                || String.IsNullOrEmpty(FechaNaci.Text) || String.IsNullOrEmpty(FechaCita.Text)) 
+                || String.IsNullOrWhiteSpace(txtNumCel.Text) || String.IsNullOrWhiteSpace(txtDireccion.Text) 
+                || cmbTipoIdent.SelectedIndex == -1 || cmbGenero.SelectedIndex == -1 
+                || cmbTipoCita.SelectedIndex == -1 || String.IsNullOrEmpty(FechaNaci.Text) 
+                || String.IsNullOrEmpty(FechaCita.Text)) 
             {
                 MessageBox.Show("Por favor, complete todos los campos.","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -155,6 +155,7 @@ namespace GUIPrinc
             txtNumCel.Clear();
             txtDireccion.Clear();
             cmbTipoCita.SelectedIndex = -1;
+            txtCorreo.Clear();
             FechaNaci.Value = DateTime.Now;
             FechaCita.Value = DateTime.Now;
 
