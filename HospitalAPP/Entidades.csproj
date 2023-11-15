@@ -45,7 +45,6 @@
     <Compile Include="Admin\Doctor.cs" />
     <Compile Include="Admin\Factura.cs" />
     <Compile Include="Usuario\Paciente.cs" />
-    <Compile Include="Admin\Pago.cs" />
     <Compile Include="Usuario\Persona.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

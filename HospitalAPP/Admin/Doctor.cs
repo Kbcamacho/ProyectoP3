@@ -9,19 +9,16 @@ namespace HospitalAPP
 {
     public class Doctor : Persona
     {
-        public String Especialidad { get; set; }
-        public bool Disponibilidad { get; set; }
+               public bool Disponibilidad { get; set; }
 
         public Doctor()
         {
 
         }
 
-        public Doctor(String nombre, String cedula, String telefono, String direccion, String correoElectronico,
-            String sexo, String especialidad, String usuario, String password, bool disponibilidad) : base(nombre, cedula, telefono, direccion,
-            correoElectronico, sexo, usuario, password)
+        public Doctor(String cedula, String password, String nombre, String apellido, String telefono, DateTime fechaNacimiento, String sexo, String correoElectronico, bool disponibilidad) : base(cedula,password,nombre,apellido,telefono,
+          fechaNacimiento,sexo,correoElectronico)
         {
-            Especialidad = especialidad;
             Disponibilidad = disponibilidad;
         }
     }

@@ -13,13 +13,12 @@ namespace HospitalAPP
         public double Precio { get; set; } 
         public double Descuento { get; set; }
         public Cita Cita { get; set; } = new Cita();
-        public Pago Pago { get; set; } = new Pago();
 
         public Factura()
         {
         }
 
-        public Factura(string idFactura, double precio, double descuento, Cita cita, Pago pago)
+        public Factura(string idFactura, double precio, double descuento, Cita cita)
         {
             IdFactura = idFactura;
             Descuento = descuento;
