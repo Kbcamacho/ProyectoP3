@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GrillUsuario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.BtnModificar = new System.Windows.Forms.Button();
             this.btnVolverCC = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbSangre = new System.Windows.Forms.ComboBox();
@@ -55,8 +57,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.BtnBorrar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -67,13 +68,36 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.Controls.Add(this.BtnBorrar);
             this.panel1.Controls.Add(this.BtnBuscar);
             this.panel1.Controls.Add(this.BtnModificar);
             this.panel1.Controls.Add(this.btnVolverCC);
             this.panel1.Location = new System.Drawing.Point(-20, 397);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1213, 112);
+            this.panel1.Size = new System.Drawing.Size(1245, 112);
             this.panel1.TabIndex = 1;
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.LavenderBlush;
+            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.Location = new System.Drawing.Point(379, 13);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(104, 31);
+            this.BtnBuscar.TabIndex = 3;
+            this.BtnBuscar.Text = "Buscar usuario";
+            this.BtnBuscar.UseVisualStyleBackColor = false;
+            // 
+            // BtnModificar
+            // 
+            this.BtnModificar.BackColor = System.Drawing.Color.LavenderBlush;
+            this.BtnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnModificar.Location = new System.Drawing.Point(159, 13);
+            this.BtnModificar.Name = "BtnModificar";
+            this.BtnModificar.Size = new System.Drawing.Size(104, 31);
+            this.BtnModificar.TabIndex = 2;
+            this.BtnModificar.Text = "Modificar usuario";
+            this.BtnModificar.UseVisualStyleBackColor = false;
             // 
             // btnVolverCC
             // 
@@ -111,7 +135,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.LightCyan;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(470, 338);
+            this.groupBox1.Size = new System.Drawing.Size(498, 338);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
@@ -129,7 +153,7 @@
             "AB-",
             "O+",
             "O-"});
-            this.cmbSangre.Location = new System.Drawing.Point(211, 293);
+            this.cmbSangre.Location = new System.Drawing.Point(232, 293);
             this.cmbSangre.Name = "cmbSangre";
             this.cmbSangre.Size = new System.Drawing.Size(236, 28);
             this.cmbSangre.TabIndex = 20;
@@ -147,7 +171,7 @@
             // txtCorreo
             // 
             this.txtCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCorreo.Location = new System.Drawing.Point(211, 260);
+            this.txtCorreo.Location = new System.Drawing.Point(232, 257);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(236, 27);
             this.txtCorreo.TabIndex = 18;
@@ -160,7 +184,7 @@
             this.cmbSexo.Items.AddRange(new object[] {
             "Hombre",
             "Mujer"});
-            this.cmbSexo.Location = new System.Drawing.Point(211, 225);
+            this.cmbSexo.Location = new System.Drawing.Point(232, 225);
             this.cmbSexo.Name = "cmbSexo";
             this.cmbSexo.Size = new System.Drawing.Size(236, 28);
             this.cmbSexo.TabIndex = 17;
@@ -169,7 +193,7 @@
             // 
             this.dtpFechaNac.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaNac.Location = new System.Drawing.Point(211, 192);
+            this.dtpFechaNac.Location = new System.Drawing.Point(232, 192);
             this.dtpFechaNac.Name = "dtpFechaNac";
             this.dtpFechaNac.Size = new System.Drawing.Size(236, 27);
             this.dtpFechaNac.TabIndex = 16;
@@ -187,7 +211,7 @@
             // txtNumero
             // 
             this.txtNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNumero.Location = new System.Drawing.Point(211, 159);
+            this.txtNumero.Location = new System.Drawing.Point(232, 159);
             this.txtNumero.Name = "txtNumero";
             this.txtNumero.Size = new System.Drawing.Size(236, 27);
             this.txtNumero.TabIndex = 15;
@@ -225,7 +249,7 @@
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellido.Location = new System.Drawing.Point(211, 126);
+            this.txtApellido.Location = new System.Drawing.Point(232, 126);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(236, 27);
             this.txtApellido.TabIndex = 14;
@@ -243,7 +267,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(211, 93);
+            this.txtNombre.Location = new System.Drawing.Point(232, 93);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(236, 27);
             this.txtNombre.TabIndex = 13;
@@ -251,7 +275,7 @@
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(211, 60);
+            this.txtPass.Location = new System.Drawing.Point(232, 60);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(236, 27);
             this.txtPass.TabIndex = 12;
@@ -259,7 +283,7 @@
             // txtIdent
             // 
             this.txtIdent.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIdent.Location = new System.Drawing.Point(211, 27);
+            this.txtIdent.Location = new System.Drawing.Point(232, 27);
             this.txtIdent.Name = "txtIdent";
             this.txtIdent.Size = new System.Drawing.Size(236, 27);
             this.txtIdent.TabIndex = 11;
@@ -301,9 +325,9 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.LightCyan;
-            this.groupBox2.Location = new System.Drawing.Point(507, 40);
+            this.groupBox2.Location = new System.Drawing.Point(535, 40);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(629, 69);
+            this.groupBox2.Size = new System.Drawing.Size(676, 69);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Buscar";
@@ -311,7 +335,7 @@
             // txtBuscar
             // 
             this.txtBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBuscar.Location = new System.Drawing.Point(211, 27);
+            this.txtBuscar.Location = new System.Drawing.Point(229, 26);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(398, 27);
             this.txtBuscar.TabIndex = 1;
@@ -331,9 +355,9 @@
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.LightCyan;
-            this.groupBox3.Location = new System.Drawing.Point(507, 116);
+            this.groupBox3.Location = new System.Drawing.Point(535, 115);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(629, 262);
+            this.groupBox3.Size = new System.Drawing.Size(676, 263);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listado";
@@ -348,37 +372,26 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(629, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(676, 235);
             this.dataGridView1.TabIndex = 0;
             // 
-            // BtnModificar
+            // BtnBorrar
             // 
-            this.BtnModificar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.BtnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificar.Location = new System.Drawing.Point(159, 13);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(104, 31);
-            this.BtnModificar.TabIndex = 2;
-            this.BtnModificar.Text = "Modificar usuario";
-            this.BtnModificar.UseVisualStyleBackColor = false;
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscar.Location = new System.Drawing.Point(288, 13);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(104, 31);
-            this.BtnBuscar.TabIndex = 3;
-            this.BtnBuscar.Text = "Buscar usuario";
-            this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.BtnBorrar.BackColor = System.Drawing.Color.LavenderBlush;
+            this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBorrar.Location = new System.Drawing.Point(269, 13);
+            this.BtnBorrar.Name = "BtnBorrar";
+            this.BtnBorrar.Size = new System.Drawing.Size(104, 31);
+            this.BtnBorrar.TabIndex = 4;
+            this.BtnBorrar.Text = "Borrar usuario";
+            this.BtnBorrar.UseVisualStyleBackColor = false;
             // 
             // GrillUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1148, 450);
+            this.ClientSize = new System.Drawing.Size(1223, 457);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -430,5 +443,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.Button BtnBorrar;
     }
 }

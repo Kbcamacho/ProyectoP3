@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\GUIPrinc"
+    "\\GUIPrinc",
+    "\\Logica",
+    "\\Logica\\LCitas"
   ],
-  "SelectedNode": "\\GUIPrinc\\GrillCitas.cs",
+  "SelectedNode": "\\Logica\\LCitas\\L_Citas.cs",
   "PreviewInSolutionExplorer": false
 }

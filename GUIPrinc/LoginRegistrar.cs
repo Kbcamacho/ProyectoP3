@@ -119,7 +119,7 @@ namespace GUIPrinc
                         //string Rpta = "";
                         oPa.Password = txtPassPaCC.Text;
                         oPa.Cedula = txtIdenPaCC.Text;
-                        oPa.Nombre = txtPassPaCC.Text;
+                        oPa.Nombre = txtNombrePaCC.Text;
                         oPa.Apellido = TxtApellido.Text;
                         oPa.TipoSangre = TxtTSangre.Text;
                         oPa.Telefono = txtNumPaCC.Text;
