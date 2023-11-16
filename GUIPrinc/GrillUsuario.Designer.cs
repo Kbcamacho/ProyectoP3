@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GrillUsuario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.BtnBorrar = new System.Windows.Forms.Button();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.BtnModificar = new System.Windows.Forms.Button();
             this.btnVolverCC = new System.Windows.Forms.Button();
@@ -55,14 +56,11 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BtnBorrar = new System.Windows.Forms.Button();
+            this.Grillausuarios = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grillausuarios)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -76,6 +74,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1245, 112);
             this.panel1.TabIndex = 1;
+            // 
+            // BtnBorrar
+            // 
+            this.BtnBorrar.BackColor = System.Drawing.Color.LavenderBlush;
+            this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBorrar.Location = new System.Drawing.Point(269, 13);
+            this.BtnBorrar.Name = "BtnBorrar";
+            this.BtnBorrar.Size = new System.Drawing.Size(104, 31);
+            this.BtnBorrar.TabIndex = 4;
+            this.BtnBorrar.Text = "Borrar usuario";
+            this.BtnBorrar.UseVisualStyleBackColor = false;
             // 
             // BtnBuscar
             // 
@@ -109,7 +118,6 @@
             this.btnVolverCC.TabIndex = 0;
             this.btnVolverCC.Text = "Volver";
             this.btnVolverCC.UseVisualStyleBackColor = false;
-            this.btnVolverCC.Click += new System.EventHandler(this.btnVolverCC_Click);
             // 
             // groupBox1
             // 
@@ -297,7 +305,6 @@
             this.label3.Size = new System.Drawing.Size(82, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombres:";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -350,49 +357,36 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Numero de Identificación:";
             // 
-            // groupBox3
+            // Grillausuarios
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.LightCyan;
-            this.groupBox3.Location = new System.Drawing.Point(535, 115);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(676, 263);
-            this.groupBox3.TabIndex = 5;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Listado";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(676, 235);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // BtnBorrar
-            // 
-            this.BtnBorrar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.BtnBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBorrar.Location = new System.Drawing.Point(269, 13);
-            this.BtnBorrar.Name = "BtnBorrar";
-            this.BtnBorrar.Size = new System.Drawing.Size(104, 31);
-            this.BtnBorrar.TabIndex = 4;
-            this.BtnBorrar.Text = "Borrar usuario";
-            this.BtnBorrar.UseVisualStyleBackColor = false;
+            this.Grillausuarios.AllowUserToAddRows = false;
+            this.Grillausuarios.AllowUserToDeleteRows = false;
+            this.Grillausuarios.AllowUserToResizeColumns = false;
+            this.Grillausuarios.AllowUserToResizeRows = false;
+            this.Grillausuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Grillausuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Grillausuarios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.Grillausuarios.BackgroundColor = System.Drawing.SystemColors.HighlightText;
+            this.Grillausuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.Grillausuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grillausuarios.GridColor = System.Drawing.Color.DodgerBlue;
+            this.Grillausuarios.Location = new System.Drawing.Point(535, 115);
+            this.Grillausuarios.Name = "Grillausuarios";
+            this.Grillausuarios.ReadOnly = true;
+            this.Grillausuarios.RowHeadersWidth = 51;
+            this.Grillausuarios.RowTemplate.Height = 24;
+            this.Grillausuarios.Size = new System.Drawing.Size(1045, 261);
+            this.Grillausuarios.TabIndex = 9;
             // 
             // GrillUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1223, 457);
-            this.Controls.Add(this.groupBox3);
+            this.ClientSize = new System.Drawing.Size(1627, 591);
+            this.Controls.Add(this.Grillausuarios);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
@@ -402,13 +396,13 @@
             this.Name = "GrillUsuario";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Usuarios";
+            this.Load += new System.EventHandler(this.GrillUsuario_Load_1);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grillausuarios)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -437,8 +431,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Grillausuarios;
         private System.Windows.Forms.ComboBox cmbSangre;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnBuscar;
