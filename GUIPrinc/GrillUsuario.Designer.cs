@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GrillUsuario));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnModificar = new System.Windows.Forms.Button();
             this.btnVolverCC = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbSangre = new System.Windows.Forms.ComboBox();
@@ -55,8 +56,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BtnModificar = new System.Windows.Forms.Button();
-            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -67,19 +67,29 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel1.Controls.Add(this.BtnBuscar);
-            this.panel1.Controls.Add(this.BtnModificar);
             this.panel1.Controls.Add(this.btnVolverCC);
-            this.panel1.Location = new System.Drawing.Point(-20, 397);
+            this.panel1.Location = new System.Drawing.Point(-20, 435);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1213, 112);
+            this.panel1.Size = new System.Drawing.Size(1213, 122);
             this.panel1.TabIndex = 1;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.Black;
+            this.btnModificar.Location = new System.Drawing.Point(340, 340);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(107, 41);
+            this.btnModificar.TabIndex = 2;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = false;
             // 
             // btnVolverCC
             // 
             this.btnVolverCC.BackColor = System.Drawing.Color.PaleVioletRed;
             this.btnVolverCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolverCC.Location = new System.Drawing.Point(29, 13);
+            this.btnVolverCC.Location = new System.Drawing.Point(32, 12);
             this.btnVolverCC.Name = "btnVolverCC";
             this.btnVolverCC.Size = new System.Drawing.Size(104, 31);
             this.btnVolverCC.TabIndex = 0;
@@ -89,7 +99,9 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.cmbSangre);
+            this.groupBox1.Controls.Add(this.btnModificar);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.txtCorreo);
             this.groupBox1.Controls.Add(this.cmbSexo);
@@ -111,7 +123,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.LightCyan;
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(470, 338);
+            this.groupBox1.Size = new System.Drawing.Size(470, 399);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
@@ -301,7 +313,7 @@
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.LightCyan;
-            this.groupBox2.Location = new System.Drawing.Point(507, 40);
+            this.groupBox2.Location = new System.Drawing.Point(507, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(629, 69);
             this.groupBox2.TabIndex = 4;
@@ -331,9 +343,9 @@
             this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.LightCyan;
-            this.groupBox3.Location = new System.Drawing.Point(507, 116);
+            this.groupBox3.Location = new System.Drawing.Point(507, 88);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(629, 262);
+            this.groupBox3.Size = new System.Drawing.Size(629, 323);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listado";
@@ -348,37 +360,27 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(629, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(629, 296);
             this.dataGridView1.TabIndex = 0;
             // 
-            // BtnModificar
+            // btnAgregar
             // 
-            this.BtnModificar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.BtnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnModificar.Location = new System.Drawing.Point(159, 13);
-            this.BtnModificar.Name = "BtnModificar";
-            this.BtnModificar.Size = new System.Drawing.Size(104, 31);
-            this.BtnModificar.TabIndex = 2;
-            this.BtnModificar.Text = "Modificar usuario";
-            this.BtnModificar.UseVisualStyleBackColor = false;
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.BackColor = System.Drawing.Color.LavenderBlush;
-            this.BtnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBuscar.Location = new System.Drawing.Point(288, 13);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(104, 31);
-            this.BtnBuscar.TabIndex = 3;
-            this.BtnBuscar.Text = "Buscar usuario";
-            this.BtnBuscar.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.Color.Black;
+            this.btnAgregar.Location = new System.Drawing.Point(211, 340);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(107, 41);
+            this.btnAgregar.TabIndex = 21;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // GrillUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(1148, 450);
+            this.ClientSize = new System.Drawing.Size(1148, 490);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -428,7 +430,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ComboBox cmbSangre;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button BtnBuscar;
-        private System.Windows.Forms.Button BtnModificar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnAgregar;
     }
 }
