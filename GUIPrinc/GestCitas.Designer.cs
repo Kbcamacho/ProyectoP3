@@ -30,12 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestCitas));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCancelarCita = new System.Windows.Forms.Button();
-            this.btnConsulCita = new System.Windows.Forms.Button();
             this.btnSacarCita = new System.Windows.Forms.Button();
-            this.btnActuCita = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnGestionUsu = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -44,39 +42,15 @@
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.panel1.Location = new System.Drawing.Point(-11, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(563, 52);
+            this.panel1.Size = new System.Drawing.Size(730, 52);
             this.panel1.TabIndex = 4;
-            // 
-            // btnCancelarCita
-            // 
-            this.btnCancelarCita.BackColor = System.Drawing.Color.LightCyan;
-            this.btnCancelarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarCita.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelarCita.Location = new System.Drawing.Point(267, 139);
-            this.btnCancelarCita.Name = "btnCancelarCita";
-            this.btnCancelarCita.Size = new System.Drawing.Size(199, 58);
-            this.btnCancelarCita.TabIndex = 4;
-            this.btnCancelarCita.Text = "Cancelar Cita";
-            this.btnCancelarCita.UseVisualStyleBackColor = false;
-            // 
-            // btnConsulCita
-            // 
-            this.btnConsulCita.BackColor = System.Drawing.Color.LightCyan;
-            this.btnConsulCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConsulCita.ForeColor = System.Drawing.Color.Black;
-            this.btnConsulCita.Location = new System.Drawing.Point(267, 45);
-            this.btnConsulCita.Name = "btnConsulCita";
-            this.btnConsulCita.Size = new System.Drawing.Size(199, 58);
-            this.btnConsulCita.TabIndex = 3;
-            this.btnConsulCita.Text = "Consular Cita";
-            this.btnConsulCita.UseVisualStyleBackColor = false;
             // 
             // btnSacarCita
             // 
             this.btnSacarCita.BackColor = System.Drawing.Color.LightCyan;
             this.btnSacarCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSacarCita.ForeColor = System.Drawing.Color.Black;
-            this.btnSacarCita.Location = new System.Drawing.Point(20, 45);
+            this.btnSacarCita.Location = new System.Drawing.Point(50, 83);
             this.btnSacarCita.Name = "btnSacarCita";
             this.btnSacarCita.Size = new System.Drawing.Size(199, 58);
             this.btnSacarCita.TabIndex = 2;
@@ -84,26 +58,14 @@
             this.btnSacarCita.UseVisualStyleBackColor = false;
             this.btnSacarCita.Click += new System.EventHandler(this.btnSacarCita_Click);
             // 
-            // btnActuCita
-            // 
-            this.btnActuCita.BackColor = System.Drawing.Color.LightCyan;
-            this.btnActuCita.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActuCita.ForeColor = System.Drawing.Color.Black;
-            this.btnActuCita.Location = new System.Drawing.Point(18, 139);
-            this.btnActuCita.Name = "btnActuCita";
-            this.btnActuCita.Size = new System.Drawing.Size(199, 58);
-            this.btnActuCita.TabIndex = 1;
-            this.btnActuCita.Text = "Actualizar Cita";
-            this.btnActuCita.UseVisualStyleBackColor = false;
-            // 
             // btnVolver
             // 
             this.btnVolver.BackColor = System.Drawing.Color.PaleVioletRed;
             this.btnVolver.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVolver.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnVolver.Location = new System.Drawing.Point(222, 305);
+            this.btnVolver.Location = new System.Drawing.Point(248, 274);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(73, 31);
+            this.btnVolver.Size = new System.Drawing.Size(103, 47);
             this.btnVolver.TabIndex = 0;
             this.btnVolver.Text = "Salir";
             this.btnVolver.UseVisualStyleBackColor = false;
@@ -111,25 +73,36 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnCancelarCita);
+            this.groupBox1.Controls.Add(this.BtnGestionUsu);
             this.groupBox1.Controls.Add(this.btnSacarCita);
-            this.groupBox1.Controls.Add(this.btnActuCita);
-            this.groupBox1.Controls.Add(this.btnConsulCita);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.LightCyan;
-            this.groupBox1.Location = new System.Drawing.Point(14, 65);
+            this.groupBox1.Location = new System.Drawing.Point(12, 56);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(491, 225);
+            this.groupBox1.Size = new System.Drawing.Size(581, 196);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Seleccione una opción de su preferencia:";
+            // 
+            // BtnGestionUsu
+            // 
+            this.BtnGestionUsu.BackColor = System.Drawing.Color.LightCyan;
+            this.BtnGestionUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnGestionUsu.ForeColor = System.Drawing.Color.Black;
+            this.BtnGestionUsu.Location = new System.Drawing.Point(327, 83);
+            this.BtnGestionUsu.Name = "BtnGestionUsu";
+            this.BtnGestionUsu.Size = new System.Drawing.Size(199, 58);
+            this.BtnGestionUsu.TabIndex = 5;
+            this.BtnGestionUsu.Text = "Gestion de usuario";
+            this.BtnGestionUsu.UseVisualStyleBackColor = false;
+            this.BtnGestionUsu.Click += new System.EventHandler(this.BtnGestionUsu_Click);
             // 
             // GestCitas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(517, 349);
+            this.ClientSize = new System.Drawing.Size(613, 352);
             this.Controls.Add(this.btnVolver);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.panel1);
@@ -149,10 +122,8 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnVolver;
-        private System.Windows.Forms.Button btnActuCita;
-        private System.Windows.Forms.Button btnCancelarCita;
-        private System.Windows.Forms.Button btnConsulCita;
         private System.Windows.Forms.Button btnSacarCita;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button BtnGestionUsu;
     }
 }

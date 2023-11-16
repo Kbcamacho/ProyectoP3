@@ -67,5 +67,13 @@ namespace GUIPrinc
         {
          
         }
+
+        private void BtnGestionUsu_Click(object sender, EventArgs e)
+        {
+
+            Form BtnGestionUsu = new GrillUsuario();
+            BtnGestionUsu.Show();
+            this.Hide();
+        }
     }
 }
