@@ -61,5 +61,10 @@ namespace GUIPrinc
         {
             Mostrar("%");
         }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

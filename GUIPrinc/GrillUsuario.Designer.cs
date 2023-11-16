@@ -107,6 +107,7 @@
             this.BtnModificar.TabIndex = 2;
             this.BtnModificar.Text = "Modificar usuario";
             this.BtnModificar.UseVisualStyleBackColor = false;
+            this.BtnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // btnVolverCC
             // 
