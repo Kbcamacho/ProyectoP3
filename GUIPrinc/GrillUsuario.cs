@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HospitalAPP;
+using Logica.LPacientes;
 
 namespace GUIPrinc
 {
@@ -15,6 +17,18 @@ namespace GUIPrinc
         public GrillUsuario()
         {
             InitializeComponent();
+        }
+        private void Mostrar(string cTexto)
+        {
+            try
+            {
+
+                Grillausuarios.DataSource = L_Paciente.Mostrar(cTexto);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
 
         private void btnVolverCC_Click(object sender, EventArgs e)
@@ -37,6 +51,7 @@ namespace GUIPrinc
 
         }
 
+<<<<<<< HEAD
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -68,6 +83,20 @@ namespace GUIPrinc
         }
 
         private void btnBorrar_Click(object sender, EventArgs e)
+=======
+        private void GrillUsuario_Load(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void GrillUsuario_Load_1(object sender, EventArgs e)
+        {
+            Mostrar("%");
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+>>>>>>> 94aa99c875e1318a81a94c923097ce6c138c37c4
         {
 
         }

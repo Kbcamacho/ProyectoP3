@@ -208,5 +208,10 @@ namespace GUIPrinc
         {
 
         }
+
+        private void LoginRegistrar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -33,8 +33,14 @@
             this.btnVolverCC = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.label9 = new System.Windows.Forms.Label();
             this.txtApellido = new System.Windows.Forms.TextBox();
+=======
+            this.TxtTSangre = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TxtApellido = new System.Windows.Forms.TextBox();
+>>>>>>> 94aa99c875e1318a81a94c923097ce6c138c37c4
             this.dtFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.txtNombrePaCC = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,7 +57,10 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
             this.cmbSangre = new System.Windows.Forms.ComboBox();
+=======
+>>>>>>> 94aa99c875e1318a81a94c923097ce6c138c37c4
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -119,12 +128,24 @@
             this.label8.TabIndex = 37;
             this.label8.Text = "Tipo de sangre:";
             // 
+<<<<<<< HEAD
+=======
+            // TxtTSangre
+            // 
+            this.TxtTSangre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtTSangre.Location = new System.Drawing.Point(21, 327);
+            this.TxtTSangre.Name = "TxtTSangre";
+            this.TxtTSangre.Size = new System.Drawing.Size(297, 27);
+            this.TxtTSangre.TabIndex = 36;
+            // 
+>>>>>>> 94aa99c875e1318a81a94c923097ce6c138c37c4
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(17, 171);
             this.label9.Name = "label9";
+<<<<<<< HEAD
             this.label9.Size = new System.Drawing.Size(82, 20);
             this.label9.TabIndex = 35;
             this.label9.Text = "Apellidos:";
@@ -137,6 +158,20 @@
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(297, 27);
             this.txtApellido.TabIndex = 34;
+=======
+            this.label9.Size = new System.Drawing.Size(73, 20);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "Apellido:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // TxtApellido
+            // 
+            this.TxtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtApellido.Location = new System.Drawing.Point(21, 194);
+            this.TxtApellido.Name = "TxtApellido";
+            this.TxtApellido.Size = new System.Drawing.Size(297, 27);
+            this.TxtApellido.TabIndex = 34;
+>>>>>>> 94aa99c875e1318a81a94c923097ce6c138c37c4
             // 
             // dtFechaNacimiento
             // 
@@ -306,6 +341,7 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña:";
             // 
+<<<<<<< HEAD
             // cmbSangre
             // 
             this.cmbSangre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -324,6 +360,8 @@
             this.cmbSangre.Size = new System.Drawing.Size(297, 28);
             this.cmbSangre.TabIndex = 38;
             // 
+=======
+>>>>>>> 94aa99c875e1318a81a94c923097ce6c138c37c4
             // LoginRegistrar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -338,6 +376,7 @@
             this.Name = "LoginRegistrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Crear Cuenta";
+            this.Load += new System.EventHandler(this.LoginRegistrar_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
