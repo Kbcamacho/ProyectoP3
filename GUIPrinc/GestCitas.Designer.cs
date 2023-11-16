@@ -30,37 +30,22 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GestCitas));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnVolverCC = new System.Windows.Forms.Button();
             this.btnCancelarCita = new System.Windows.Forms.Button();
             this.btnConsulCita = new System.Windows.Forms.Button();
             this.btnSacarCita = new System.Windows.Forms.Button();
             this.btnActuCita = new System.Windows.Forms.Button();
             this.btnVolver = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel1.Controls.Add(this.btnVolverCC);
             this.panel1.Location = new System.Drawing.Point(-11, -2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(563, 52);
             this.panel1.TabIndex = 4;
-            // 
-            // btnVolverCC
-            // 
-            this.btnVolverCC.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.btnVolverCC.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolverCC.Location = new System.Drawing.Point(25, 10);
-            this.btnVolverCC.Name = "btnVolverCC";
-            this.btnVolverCC.Size = new System.Drawing.Size(104, 31);
-            this.btnVolverCC.TabIndex = 10;
-            this.btnVolverCC.Text = "Volver";
-            this.btnVolverCC.UseVisualStyleBackColor = false;
-            this.btnVolverCC.Click += new System.EventHandler(this.btnVolverCC_Click);
             // 
             // btnCancelarCita
             // 
@@ -155,7 +140,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Gestion de Citas";
             this.Load += new System.EventHandler(this.GestCitas_Load);
-            this.panel1.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -170,6 +154,5 @@
         private System.Windows.Forms.Button btnConsulCita;
         private System.Windows.Forms.Button btnSacarCita;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnVolverCC;
     }
 }

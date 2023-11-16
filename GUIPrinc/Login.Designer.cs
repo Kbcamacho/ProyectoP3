@@ -136,6 +136,7 @@
             this.txtUserPaCC.Name = "txtUserPaCC";
             this.txtUserPaCC.Size = new System.Drawing.Size(346, 27);
             this.txtUserPaCC.TabIndex = 2;
+            this.txtUserPaCC.TextChanged += new System.EventHandler(this.txtUserPaCC_TextChanged);
             // 
             // label3
             // 

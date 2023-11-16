@@ -34,7 +34,9 @@ namespace GUIPrinc
 
         private void btnVolver_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Form btantLogin = new Login();
+            btantLogin.Show();
+            this.Dispose();
         }
 
         private void label2_Click(object sender, EventArgs e)

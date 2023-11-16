@@ -77,14 +77,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Archivos.cs" />
-    <Compile Include="CitaRepository.cs" />
-    <Compile Include="ABSrepository.cs" />
     <Compile Include="ConexionDB\ConexionBD.cs" />
-    <Compile Include="Interfaz.cs" />
-    <Compile Include="LoginRepository.cs" />
     <Compile Include="Repositorio\DUsuarios.cs" />
-    <Compile Include="Response.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

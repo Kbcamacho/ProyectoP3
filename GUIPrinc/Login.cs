@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using static Logica.LPacientes.L_Paciente;
 
 namespace GUIPrinc
 {
@@ -33,28 +34,28 @@ namespace GUIPrinc
 
         }
 
+
         private void btnIngresarIS_Click(object sender, EventArgs e)
         {
-            try
-            {
+            string username = txtUserPaCC.Text;
+            string password = txtPassPaCC.Text;
 
-                TextReader Inicio = new StreamReader(txtUserPaCC.Text + ".txt");
+            BusinessLayer businessLayer = new BusinessLayer();
+            bool isAuthenticated = businessLayer.AuthenticateUser(username, password);
 
-                if (Inicio.ReadLine() == txtPassPaCC.Text)
-                {
-                    Form btIngresar = new GestCitas();
-                    btIngresar.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Usuario y/o Contraseña incorrectos!", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-            catch
+            if (isAuthenticated)
             {
-                MessageBox.Show("Usuario y/o Contraseña incorrectos.", "¡Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Inicio de sesión exitoso.");
+                Form btIngresar = new GestCitas();
+                btIngresar.Show();
+                this.Hide();
             }
+            else
+            {
+                MessageBox.Show("Inicio de sesión fallido.");
+            }
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -73,6 +74,11 @@ namespace GUIPrinc
         private void Login_Load(object sender, EventArgs e)
         {
            
+        }
+
+        private void txtUserPaCC_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
