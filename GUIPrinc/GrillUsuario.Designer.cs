@@ -361,7 +361,15 @@
             // 
             this.Grillausuarios.AllowUserToAddRows = false;
             this.Grillausuarios.AllowUserToDeleteRows = false;
+            this.Grillausuarios.AllowUserToResizeColumns = false;
+            this.Grillausuarios.AllowUserToResizeRows = false;
+            this.Grillausuarios.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Grillausuarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Grillausuarios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.Grillausuarios.BackgroundColor = System.Drawing.SystemColors.HighlightText;
+            this.Grillausuarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.Grillausuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grillausuarios.GridColor = System.Drawing.Color.DodgerBlue;
             this.Grillausuarios.Location = new System.Drawing.Point(535, 115);
@@ -370,7 +378,7 @@
             this.Grillausuarios.RowHeadersWidth = 51;
             this.Grillausuarios.RowTemplate.Height = 24;
             this.Grillausuarios.Size = new System.Drawing.Size(1045, 261);
-            this.Grillausuarios.TabIndex = 0;
+            this.Grillausuarios.TabIndex = 9;
             // 
             // GrillUsuario
             // 
