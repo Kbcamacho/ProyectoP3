@@ -104,7 +104,7 @@ namespace GUIPrinc
 
         private void Guardar()
         {
-            if ( txtPassPaCC.Text == string.Empty || txtNombrePaCC.Text == string.Empty || TxtApellido.Text == string.Empty || txtIdenPaCC.Text == string.Empty || TxtTSangre.Text == string.Empty || txtNumPaCC.Text == string.Empty || dtFechaNacimiento.Text == string.Empty || cmbGeneroPaCC.Text == string.Empty || txtCorreoPaCC.Text == string.Empty)
+            if ( txtPassPaCC.Text == string.Empty || txtNombrePaCC.Text == string.Empty || TxtApellido.Text == string.Empty || txtIdenPaCC.Text == string.Empty || txtNumPaCC.Text == string.Empty || dtFechaNacimiento.Text == string.Empty || cmbGeneroPaCC.Text == string.Empty || txtCorreoPaCC.Text == string.Empty)
             {
                 MessageBox.Show("Faltan Datos por ingresar", "Avisos del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
@@ -121,7 +121,7 @@ namespace GUIPrinc
                         oPa.Cedula = txtIdenPaCC.Text;
                         oPa.Nombre = txtNombrePaCC.Text;
                         oPa.Apellido = TxtApellido.Text;
-                        oPa.TipoSangre = TxtTSangre.Text;
+                        //oPa.TipoSangre = TxtTSangre.Text;
                         oPa.Telefono = txtNumPaCC.Text;
                         oPa.FechaNacimiento = Convert.ToDateTime(dtFechaNacimiento.Text);
                         oPa.Sexo = cmbGeneroPaCC.Text;

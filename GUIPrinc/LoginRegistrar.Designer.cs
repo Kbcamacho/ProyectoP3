@@ -33,7 +33,6 @@
             this.btnVolverCC = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.TxtTSangre = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.TxtApellido = new System.Windows.Forms.TextBox();
             this.dtFechaNacimiento = new System.Windows.Forms.DateTimePicker();
@@ -80,7 +79,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.TxtTSangre);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.TxtApellido);
             this.groupBox1.Controls.Add(this.dtFechaNacimiento);
@@ -118,14 +116,6 @@
             this.label8.Size = new System.Drawing.Size(125, 20);
             this.label8.TabIndex = 37;
             this.label8.Text = "Tipo de sangre:";
-            // 
-            // TxtTSangre
-            // 
-            this.TxtTSangre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTSangre.Location = new System.Drawing.Point(21, 327);
-            this.TxtTSangre.Name = "TxtTSangre";
-            this.TxtTSangre.Size = new System.Drawing.Size(297, 27);
-            this.TxtTSangre.TabIndex = 36;
             // 
             // label9
             // 
@@ -360,6 +350,5 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox TxtApellido;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox TxtTSangre;
     }
 }
