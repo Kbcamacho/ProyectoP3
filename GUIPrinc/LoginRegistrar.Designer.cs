@@ -32,6 +32,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVolverCC = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtApellido = new System.Windows.Forms.TextBox();
             this.dtFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.txtNombrePaCC = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -48,10 +51,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.TxtApellido = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.TxtTSangre = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.cmbSangre = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -79,10 +79,10 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cmbSangre);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.TxtTSangre);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.TxtApellido);
+            this.groupBox1.Controls.Add(this.txtApellido);
             this.groupBox1.Controls.Add(this.dtFechaNacimiento);
             this.groupBox1.Controls.Add(this.txtNombrePaCC);
             this.groupBox1.Controls.Add(this.label7);
@@ -108,6 +108,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cuenta para Paciente";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(17, 302);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(125, 20);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Tipo de sangre:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(17, 171);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(82, 20);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "Apellidos:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
+            // 
+            // txtApellido
+            // 
+            this.txtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellido.Location = new System.Drawing.Point(21, 194);
+            this.txtApellido.Name = "txtApellido";
+            this.txtApellido.Size = new System.Drawing.Size(297, 27);
+            this.txtApellido.TabIndex = 34;
             // 
             // dtFechaNacimiento
             // 
@@ -135,9 +164,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(17, 106);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(149, 20);
+            this.label7.Size = new System.Drawing.Size(82, 20);
             this.label7.TabIndex = 29;
-            this.label7.Text = "Nombre Completo:";
+            this.label7.Text = "Nombres:";
             // 
             // btnLimpiarCP
             // 
@@ -253,9 +282,9 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(360, 41);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 20);
+            this.label4.Size = new System.Drawing.Size(168, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Numero Celular:";
+            this.label4.Text = "Numero de Contacto:";
             // 
             // label3
             // 
@@ -277,42 +306,23 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña:";
             // 
-            // TxtApellido
+            // cmbSangre
             // 
-            this.TxtApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtApellido.Location = new System.Drawing.Point(21, 194);
-            this.TxtApellido.Name = "TxtApellido";
-            this.TxtApellido.Size = new System.Drawing.Size(297, 27);
-            this.TxtApellido.TabIndex = 34;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(17, 171);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(73, 20);
-            this.label9.TabIndex = 35;
-            this.label9.Text = "Apellido:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // TxtTSangre
-            // 
-            this.TxtTSangre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtTSangre.Location = new System.Drawing.Point(21, 327);
-            this.TxtTSangre.Name = "TxtTSangre";
-            this.TxtTSangre.Size = new System.Drawing.Size(297, 27);
-            this.TxtTSangre.TabIndex = 36;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(17, 302);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(125, 20);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Tipo de sangre:";
+            this.cmbSangre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSangre.FormattingEnabled = true;
+            this.cmbSangre.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "AB+",
+            "AB-",
+            "B+",
+            "B-",
+            "O+",
+            "O-"});
+            this.cmbSangre.Location = new System.Drawing.Point(21, 326);
+            this.cmbSangre.Name = "cmbSangre";
+            this.cmbSangre.Size = new System.Drawing.Size(297, 28);
+            this.cmbSangre.TabIndex = 38;
             // 
             // LoginRegistrar
             // 
@@ -357,8 +367,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DateTimePicker dtFechaNacimiento;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox TxtApellido;
+        private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox TxtTSangre;
+        private System.Windows.Forms.ComboBox cmbSangre;
     }
 }
